@@ -14,9 +14,11 @@ import com.taotao.common.pojo.TaotaoResult;
 import com.taotao.common.util.IDUtils;
 import com.taotao.mapper.TbItemDescMapper;
 import com.taotao.mapper.TbItemMapper;
+import com.taotao.mapper.TbItemParamItemMapper;
 import com.taotao.pojo.TbItem;
 import com.taotao.pojo.TbItemDesc;
 import com.taotao.pojo.TbItemExample;
+import com.taotao.pojo.TbItemParamItem;
 import com.taotao.service.ItemService;
 
 @Service
@@ -27,6 +29,9 @@ public class ItemServiceImpl implements ItemService {
 	
 	@Autowired
 	private TbItemDescMapper itemDescMapper;
+	
+	@Autowired
+	private TbItemParamItemMapper itemParamItemMapper;
 	
 	@Override
 	public EasyUIDataGridResult<TbItem> getItemList(Integer page, Integer rows) {
@@ -41,7 +46,11 @@ public class ItemServiceImpl implements ItemService {
 	}
 
 	@Override
-	public TaotaoResult saveItem(TbItem item, String desc) {
+	public TaotaoResult saveItem(TbItem item, String desc, String itemParams) {
+		if(desc == null)
+			desc = "";
+		if(itemParams == null)
+			itemParams = "";
 		// 1、生成商品id
 		long itemId = IDUtils.genItemId();
 		// 2、补全TbItem对象的属性
@@ -63,6 +72,86 @@ public class ItemServiceImpl implements ItemService {
 		// 6、向商品描述表插入数据
 		itemDescMapper.insert(itemDesc);
 		date = null;
+		// 7 、创建一个TbItemParamItem对象
+		TbItemParamItem tbItemParamItem = new TbItemParamItem();
+		// 8、补全TbItemParamItem的属性
+		tbItemParamItem.setCreated(date);
+		tbItemParamItem.setUpdated(date);
+		tbItemParamItem.setItemId(itemId);
+		tbItemParamItem.setParamData(itemParams);
+		// 9、向商品参数数据表插入数据
+		itemParamItemMapper.insert(tbItemParamItem);
+		return TaotaoResult.ok();
+	}
+
+	@Override
+	public TaotaoResult updateItem(TbItem item, String desc, String itemParams, Long itemParamId) {
+		if(desc == null)
+			desc = "";
+		if(itemParams == null)
+			itemParams = "";
+		Date date = new Date();
+		item.setUpdated(date);
+		itemMapper.updateByPrimaryKeySelective(item);
+		TbItemDesc itemDesc = itemDescMapper.selectByPrimaryKey(item.getId());
+		if(itemDesc == null) {
+			// 4、创建一个TbItemDesc对象
+			itemDesc = new TbItemDesc();
+			// 5、补全TbItemDesc的属性
+			itemDesc.setItemId(item.getId());
+			itemDesc.setItemDesc(desc);
+			itemDesc.setCreated(date);
+			itemDesc.setUpdated(date);
+			itemDescMapper.insert(itemDesc);
+		} else {
+			if(itemDesc.getItemDesc() == null) {
+				itemDesc.setItemDesc(desc);
+				itemDescMapper.updateByPrimaryKeyWithBLOBs(itemDesc);
+			} else {
+				if(!itemDesc.getItemDesc().equals(desc)) {
+					itemDesc.setItemDesc(desc);
+					itemDesc.setUpdated(date);
+					itemDescMapper.updateByPrimaryKeyWithBLOBs(itemDesc);
+				}
+			}
+		}
+		TbItemParamItem itemParamItem = itemParamItemMapper.selectByPrimaryKey(itemParamId);
+		if(itemParamItem == null) {
+			// 7 、创建一个TbItemParamItem对象
+			itemParamItem = new TbItemParamItem();
+			// 8、补全TbItemParamItem的属性
+			itemParamItem.setCreated(date);
+			itemParamItem.setUpdated(date);
+			itemParamItem.setItemId(item.getId());
+			itemParamItem.setParamData(itemParams);
+			itemParamItemMapper.insert(itemParamItem);
+		} else {
+			if(itemParamItem.getParamData() == null) {
+				itemParamItem.setParamData(itemParams);
+				itemParamItemMapper.updateByPrimaryKeyWithBLOBs(itemParamItem);
+			} else {
+				if(!itemParamItem.getParamData().equals(itemParams)) {
+					itemParamItem.setParamData(itemParams);
+					itemParamItem.setUpdated(date);
+					itemParamItemMapper.updateByPrimaryKeyWithBLOBs(itemParamItem);
+				}
+			}
+		}
+		return TaotaoResult.ok();
+	}
+	
+	/**
+	 * //商品状态，1-正常，2-下架，3-删除
+	 */
+	@Override
+	public TaotaoResult changeItemStatus(String ids, Byte status) {
+		String[] itemIds = ids.split(",");
+		for (String itemId : itemIds) {
+			TbItem record = new TbItem();
+			record.setId(Long.parseLong(itemId));
+			record.setStatus(status);
+			itemMapper.updateByPrimaryKeySelective(record);
+		}
 		return TaotaoResult.ok();
 	}
 

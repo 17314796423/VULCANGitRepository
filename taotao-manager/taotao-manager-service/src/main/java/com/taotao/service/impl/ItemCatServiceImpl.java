@@ -7,6 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.taotao.common.pojo.EasyUITreeNode;
+import com.taotao.common.pojo.TaotaoResult;
 import com.taotao.mapper.TbItemCatMapper;
 import com.taotao.pojo.TbItemCat;
 import com.taotao.pojo.TbItemCatExample;
@@ -34,6 +35,22 @@ public class ItemCatServiceImpl implements ItemCatService {
 			nodeList.add(treeNode);
 		}
 		return nodeList;
+	}
+
+	@Override
+	public TaotaoResult queryByItemCatId(Long itemCatId) {
+		try {
+			TbItemCatExample example = new TbItemCatExample();
+			example.createCriteria().andIdEqualTo(itemCatId);
+			List<TbItemCat> list = itemCatMapper.selectByExample(example);
+			if(list != null && list.size() > 0) {
+				return TaotaoResult.ok(list.get(0).getName());
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
+			return TaotaoResult.build(500, "服务器繁忙，请稍后再试！");
+		}
+		return TaotaoResult.ok();
 	}
 
 }

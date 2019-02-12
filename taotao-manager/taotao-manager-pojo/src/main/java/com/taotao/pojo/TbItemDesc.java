@@ -1,10 +1,16 @@
 package com.taotao.pojo;
 
 
+import java.io.Serializable;
 import java.util.Date;
 
-public class TbItemDesc {
-    private Long itemId;
+public class TbItemDesc implements Serializable{
+    /**
+	 * 
+	 */
+	private static final long serialVersionUID = -3369180805974144058L;
+
+	private Long itemId;
 
     private Date created;
 

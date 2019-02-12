@@ -1,3 +1,4 @@
+
 Date.prototype.format = function(format){ 
     var o =  { 
     "M+" : this.getMonth()+1, //month 
@@ -20,6 +21,25 @@ Date.prototype.format = function(format){
 };
 
 var TT = TAOTAO = {
+	//实现图片删除
+ 	delimg : function(data){
+ 		
+ 			if($("input[name='image']").val() && $("input[name='image']").val() != ''){
+	 			var arr = [];
+	 			var _li_ = $(data).parent("li");
+	 			var srcxx = _li_.children().first().attr('href');
+	 			var urls = $("input[name='image']").val().split(',');
+	 			for(var i in urls){
+	 				if(urls[i] == srcxx){
+	 					continue;
+	 				}
+	 				arr.push(urls[i]);
+	 			}
+	 			$("input[name='image']").val(arr.join(","));
+	 			_li_.remove();
+ 			}
+ 			
+ 	},
 	// 编辑器参数
 	kingEditorParams : {
 		//指定上传文件参数名称
@@ -43,7 +63,7 @@ var TT = TAOTAO = {
 	},
 	// 格式化价格
 	formatPrice : function(val,row){
-		return (val/1000).toFixed(2);
+		return (val/100).toFixed(2);
 	},
 	// 格式化商品的状态
 	formatItemStatus : function formatStatus(val,row){
@@ -51,6 +71,8 @@ var TT = TAOTAO = {
             return '正常';
         } else if(val == 2){
         	return '<span style="color:red;">下架</span>';
+        } else if(val == 3){
+        	return '<span style="color:red;">删除</span>';
         } else {
         	return '未知';
         }
@@ -64,6 +86,7 @@ var TT = TAOTAO = {
     },
     // 初始化图片上传组件
     initPicUpload : function(data){
+		
     	$(".picFileUpload").each(function(i,e){
     		var _ele = $(e);
     		_ele.siblings("div.pics").remove();
@@ -81,9 +104,13 @@ var TT = TAOTAO = {
 							KindEditor.each(urlList, function(i, data) {
 								imgArray.push(data.url);
 								// 回显图片
-								form.find(".pics ul").append("<li><a href='"+data.url+"' target='_blank'><img src='"+data.url+"' width='80' height='50' /></a></li>");
+								form.find(".pics ul").append("<li><a href='"+data.url+"' target='_blank'><img src='"+data.url+"' width='80' height='50'/></a><a href='javascript:void(0);' onclick='TAOTAO.delimg(this);' class='delimg'><img src='/css/image/xx.png'></img></a></li>");
 							});
-							form.find("[name=image]").val(imgArray.join(","));
+							if(form.find("[name=image]").val() && form.find("[name=image]").val() != ''){
+								form.find("[name=image]").val(form.find("[name=image]").val()+','+imgArray.join(","));
+							}else{
+								form.find("[name=image]").val(imgArray.join(","));
+							}
 							editor.hideDialog();
 						}
 					});
@@ -184,10 +211,11 @@ var TT = TAOTAO = {
     },
     
     changeItemParam : function(node,formId){
-    	$.getJSON("/item/param/query/itemcatid/" + node.id,function(data){
+    	$.getJSON("/itemParam/query/" + node.id,function(data){
 			  if(data.status == 200 && data.data){
 				 $("#"+formId+" .params").show();
 				 var paramData = JSON.parse(data.data.paramData);
+				 console.log(data.data);
 				 var html = "<ul>";
 				 for(var i in paramData){
 					 var pd = paramData[i];

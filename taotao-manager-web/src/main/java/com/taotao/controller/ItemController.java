@@ -27,7 +27,31 @@ public class ItemController {
 	
 	@RequestMapping(value="/save")
 	@ResponseBody
-	public TaotaoResult saveItem(TbItem item, String desc) {
-		return itemService.saveItem(item, desc);
+	public TaotaoResult saveItem(TbItem item, String desc, String itemParams) {
+		return itemService.saveItem(item, desc, itemParams);
+	}
+	
+	@RequestMapping(value="/update")
+	@ResponseBody
+	public TaotaoResult updateItem(TbItem item, String desc, String itemParams, Long itemParamId) {
+		return itemService.updateItem(item, desc, itemParams, itemParamId);
+	}
+	
+	@RequestMapping(value="/delete")
+	@ResponseBody
+	public TaotaoResult deleteItem(String ids) {
+		return itemService.changeItemStatus(ids, (byte)3);
+	}
+	
+	@RequestMapping(value="/instock")
+	@ResponseBody
+	public TaotaoResult instockItem(String ids) {
+		return itemService.changeItemStatus(ids, (byte)2);
+	}
+	
+	@RequestMapping(value="/reshelf")
+	@ResponseBody
+	public TaotaoResult reshelfItem(String ids) {
+		return itemService.changeItemStatus(ids, (byte)1);
 	}
 }
