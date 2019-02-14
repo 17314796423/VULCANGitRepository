@@ -66,16 +66,25 @@ var contentEditPage = {
 			}
 			contentEditEditor.sync();
 			
-			$.post("/rest/content/edit",$("#contentEditForm").serialize(), function(data){
+			$.post("/content/edit",$("#contentEditForm").serialize(), function(data){
 				if(data.status == 200){
-					$.messager.alert('提示','新增内容成功!');
+					$.messager.alert('提示','编辑内容成功!');
 					$("#contentList").datagrid("reload");
 					TT.closeCurrentWindow();
 				}
 			});
 		},
 		clearForm : function(){
-			
+			var data = $("#contentList").datagrid("getSelections")[0];
+			$("#contentEditForm").form("load",data);
+			// 实现图片
+			if(data.pic){
+				$("#contentEditForm [name=pic]").after("<a href='"+data.pic+"' target='_blank'><img src='"+data.pic+"' width='80' height='50'/></a>");	
+			}
+			if(data.pic2){
+				$("#contentEditForm [name=pic2]").after("<a href='"+data.pic2+"' target='_blank'><img src='"+data.pic2+"' width='80' height='50'/></a>");					
+			}
+			contentEditEditor.html(data.content);
 		}
 };
 

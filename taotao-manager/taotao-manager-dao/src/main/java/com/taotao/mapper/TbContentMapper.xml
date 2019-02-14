@@ -36,12 +36,12 @@
 									and ${criterion.condition}
 								</when>
 								<when test="criterion.singleValue">
-									and ${criterion.condition} #{criterion.value}
+									and ${criterion.condition} '${criterion.value}'
 								</when>
 								<when test="criterion.betweenValue">
-									and ${criterion.condition} #{criterion.value}
+									and ${criterion.condition} '${criterion.value}'
 									and
-									#{criterion.secondValue}
+									'${criterion.secondValue}'
 								</when>
 								<when test="criterion.listValue">
 									and ${criterion.condition}
@@ -69,12 +69,12 @@
 									and ${criterion.condition}
 								</when>
 								<when test="criterion.singleValue">
-									and ${criterion.condition} #{criterion.value}
+									and ${criterion.condition} '${criterion.value}'
 								</when>
 								<when test="criterion.betweenValue">
-									and ${criterion.condition} #{criterion.value}
+									and ${criterion.condition} '${criterion.value}'
 									and
-									#{criterion.secondValue}
+									'${criterion.secondValue}'
 								</when>
 								<when test="criterion.listValue">
 									and ${criterion.condition}

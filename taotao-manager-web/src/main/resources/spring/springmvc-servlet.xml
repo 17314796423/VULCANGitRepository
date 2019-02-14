@@ -33,6 +33,8 @@
 	<dubbo:reference interface="com.taotao.service.ItemParamService" id="itemParamService" timeout="3000000"/>
 	<dubbo:reference interface="com.taotao.service.ItemDescService" id="itemDescService" timeout="3000000"/>
 	<dubbo:reference interface="com.taotao.service.ItemParamItemService" id="itemParamItemService" timeout="3000000"/>
+	<dubbo:reference interface="com.taotao.content.service.ContentCategoryService" id="contentCategoryService" timeout="3000000"/>
+	<dubbo:reference interface="com.taotao.content.service.ContentService" id="contentService" timeout="3000000"/>
 	<mvc:resources location="/WEB-INF/js/" mapping="/js/**"/>
 	<mvc:resources location="/WEB-INF/css/" mapping="/css/**"/>
 </beans>
