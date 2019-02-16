@@ -14,4 +14,6 @@ public interface ContentService {
 
 	public TaotaoResult deleteContent(String ids);
 
+	public String getContentJsonList(Long categoryId);
+
 }
