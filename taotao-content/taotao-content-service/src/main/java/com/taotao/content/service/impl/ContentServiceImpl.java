@@ -20,7 +20,7 @@ import com.taotao.content.service.ContentService;
 import com.taotao.mapper.TbContentMapper;
 import com.taotao.pojo.TbContent;
 import com.taotao.pojo.TbContentExample;
-import com.taotao.portal.pojo.Ad1Node;
+import com.taotao.common.pojo.Ad1Node;
 
 @Service
 public class ContentServiceImpl implements ContentService{
