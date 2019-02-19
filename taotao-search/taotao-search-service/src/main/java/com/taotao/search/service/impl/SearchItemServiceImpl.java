@@ -10,6 +10,7 @@ import org.apache.solr.client.solrj.SolrServer;
 import org.apache.solr.client.solrj.SolrServerException;
 import org.apache.solr.common.SolrInputDocument;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
 
 import com.taotao.common.pojo.SearchItem;
@@ -26,6 +27,7 @@ public class SearchItemServiceImpl implements SearchItemService{
 	private SearchItemMapper searchItemMapper;
 	
 	@Autowired
+	@Qualifier("solrCluster")
 	private SolrServer solrServer;
 	
 	@Autowired
@@ -55,6 +57,7 @@ public class SearchItemServiceImpl implements SearchItemService{
 
 	@Override
 	public SearchResult search(String queryString, Integer page, Integer rows) throws SolrServerException {
+		System.out.println(solrServer);
 		SolrQuery query = new SolrQuery();
 		if(StringUtils.isNotBlank(queryString)) {
 			query.setQuery(queryString);

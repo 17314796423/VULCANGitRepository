@@ -20,11 +20,10 @@ public class SearchController {
 	private Integer ITEM_ROWS;
 	
 	@RequestMapping("/search")
-	public String search(Integer page, @RequestParam(value="q")String queryString, Model model) throws Exception {
+	public String search(@RequestParam(defaultValue="1")Integer page, @RequestParam(value="q")String queryString, Model model) throws Exception {
+		//int i = 1/0;
 		queryString = new String(queryString.getBytes("iso-8859-1"), "utf-8");
 		SearchResult searchResult = searchItemService.search(queryString, page, ITEM_ROWS);
-		if(page == null)
-			page = 1;
 		model.addAttribute("query", queryString);
 		model.addAttribute("totalPages", searchResult.getPageCount());
 		model.addAttribute("itemList", searchResult.getItemList());
