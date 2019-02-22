@@ -4,6 +4,8 @@ package com.taotao.pojo;
 import java.io.Serializable;
 import java.util.Date;
 
+import org.apache.commons.lang3.StringUtils;
+
 public class TbItem implements Serializable{
     /**
 	 * 
@@ -32,7 +34,7 @@ public class TbItem implements Serializable{
 
     private Date updated;
 
-    public Long getId() {
+	public Long getId() {
         return id;
     }
 
@@ -118,5 +120,12 @@ public class TbItem implements Serializable{
 
     public void setUpdated(Date updated) {
         this.updated = updated;
+    }
+    
+    public String[] getImages() {
+    	if(StringUtils.isNotBlank(this.image)) {
+    		return this.image.split(",");
+    	}
+    	return null;
     }
 }

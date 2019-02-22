@@ -4,7 +4,14 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
+import javax.jms.Destination;
+import javax.jms.JMSException;
+import javax.jms.Message;
+import javax.jms.Session;
+
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.jms.core.JmsTemplate;
+import org.springframework.jms.core.MessageCreator;
 import org.springframework.stereotype.Service;
 
 import com.github.pagehelper.PageHelper;
@@ -32,6 +39,12 @@ public class ItemServiceImpl implements ItemService {
 	
 	@Autowired
 	private TbItemParamItemMapper itemParamItemMapper;
+	
+	@Autowired
+	private JmsTemplate jmsTemplate;
+	
+	@Autowired
+	private Destination destination;
 	
 	@Override
 	public EasyUIDataGridResult<TbItem> getItemList(Integer page, Integer rows) {
@@ -81,7 +94,7 @@ public class ItemServiceImpl implements ItemService {
 		tbItemParamItem.setParamData(itemParams);
 		// 9、向商品参数数据表插入数据
 		itemParamItemMapper.insert(tbItemParamItem);
-		return TaotaoResult.ok();
+		return TaotaoResult.ok(item.getId());
 	}
 
 	@Override
@@ -153,6 +166,29 @@ public class ItemServiceImpl implements ItemService {
 			itemMapper.updateByPrimaryKeySelective(record);
 		}
 		return TaotaoResult.ok();
+	}
+
+	@Override
+	public TaotaoResult sendChangeItemMessage(final String ids) {
+		jmsTemplate.send(destination, new MessageCreator() {
+			
+			@Override
+			public Message createMessage(Session session) throws JMSException {
+				return session.createTextMessage(ids);
+			}
+			
+		});
+		return TaotaoResult.ok();
+	}
+
+	@Override
+	public TbItem getItemById(Long id) {
+		return itemMapper.selectByPrimaryKey(id);
+	}
+
+	@Override
+	public TbItemDesc getItemDescById(Long id) {
+		return itemDescMapper.selectByPrimaryKey(id);
 	}
 
 }

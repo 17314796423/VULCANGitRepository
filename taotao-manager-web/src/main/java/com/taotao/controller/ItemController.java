@@ -28,30 +28,40 @@ public class ItemController {
 	@RequestMapping(value="/save")
 	@ResponseBody
 	public TaotaoResult saveItem(TbItem item, String desc, String itemParams) {
-		return itemService.saveItem(item, desc, itemParams);
+		TaotaoResult result = itemService.saveItem(item, desc, itemParams);
+		itemService.sendChangeItemMessage(result.getData() + "");
+		return result;
 	}
 	
 	@RequestMapping(value="/update")
 	@ResponseBody
 	public TaotaoResult updateItem(TbItem item, String desc, String itemParams, Long itemParamId) {
-		return itemService.updateItem(item, desc, itemParams, itemParamId);
+		TaotaoResult result = itemService.updateItem(item, desc, itemParams, itemParamId);
+		itemService.sendChangeItemMessage(item.getId() + "");
+		return result;
 	}
 	
 	@RequestMapping(value="/delete")
 	@ResponseBody
 	public TaotaoResult deleteItem(String ids) {
-		return itemService.changeItemStatus(ids, (byte)3);
+		TaotaoResult result = itemService.changeItemStatus(ids, (byte)3);
+		itemService.sendChangeItemMessage(ids);
+		return result;
 	}
 	
 	@RequestMapping(value="/instock")
 	@ResponseBody
 	public TaotaoResult instockItem(String ids) {
-		return itemService.changeItemStatus(ids, (byte)2);
+		TaotaoResult result = itemService.changeItemStatus(ids, (byte)2);
+		itemService.sendChangeItemMessage(ids);
+		return result;
 	}
 	
 	@RequestMapping(value="/reshelf")
 	@ResponseBody
 	public TaotaoResult reshelfItem(String ids) {
-		return itemService.changeItemStatus(ids, (byte)1);
+		TaotaoResult result = itemService.changeItemStatus(ids, (byte)1);
+		itemService.sendChangeItemMessage(ids);
+		return result;
 	}
 }

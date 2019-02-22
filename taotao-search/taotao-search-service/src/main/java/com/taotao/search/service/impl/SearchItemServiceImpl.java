@@ -27,7 +27,7 @@ public class SearchItemServiceImpl implements SearchItemService{
 	private SearchItemMapper searchItemMapper;
 	
 	@Autowired
-	@Qualifier("solrCluster")
+	@Qualifier("solrServer")
 	private SolrServer solrServer;
 	
 	@Autowired

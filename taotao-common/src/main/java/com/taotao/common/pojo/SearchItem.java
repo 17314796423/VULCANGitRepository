@@ -14,6 +14,7 @@ public class SearchItem implements Serializable {
 	private String image;//商品图片的路径
 	private String category_name;//商品分类名称
 	private String item_desc;//商品的描述
+	private Byte status;
 	
 	public Long getId() {
 		return id;
@@ -62,5 +63,11 @@ public class SearchItem implements Serializable {
 		if(this.image != null)
 			return this.image.split(",");
 		return null;
+	}
+	public Byte getStatus() {
+		return status;
+	}
+	public void setStatus(Byte status) {
+		this.status = status;
 	}
 }
