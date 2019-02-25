@@ -128,4 +128,11 @@ public class TbItem implements Serializable{
     	}
     	return null;
     }
+    
+    /**
+     * 为了防止json转po时候报错
+     * @param images
+     */
+    public void setImages(String[] images) {
+    }
 }

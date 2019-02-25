@@ -11,6 +11,7 @@ import org.apache.solr.client.solrj.response.QueryResponse;
 import org.apache.solr.common.SolrDocument;
 import org.apache.solr.common.SolrDocumentList;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Repository;
 
 import com.taotao.common.pojo.SearchItem;
@@ -20,6 +21,7 @@ import com.taotao.common.pojo.SearchResult;
 public class SearchDao {
 	
 	@Autowired
+	@Qualifier("solrCluster")
 	private SolrServer solrServer;
 	
 	public SearchResult search(SolrQuery query) throws SolrServerException {

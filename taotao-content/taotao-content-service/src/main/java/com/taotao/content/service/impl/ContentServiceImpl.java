@@ -29,7 +29,7 @@ public class ContentServiceImpl implements ContentService{
 	private TbContentMapper contentMapper;
 	
 	@Autowired
-	@Qualifier("jedisPool")
+	@Qualifier("jedisCluster")
 	private JedisClient jedisClient;
 	
 	@Value("${AD1_HEIGHT}")

@@ -40,7 +40,7 @@
 		
 		<bean class="com.taotao.content.jedis.JedisClientPool" id="jedisPool"></bean>
 		
-		<!-- <bean class="redis.clients.jedis.JedisCluster">
+		<bean class="redis.clients.jedis.JedisCluster">
 			<constructor-arg name="nodes">
 				<set>
 					<bean class="redis.clients.jedis.HostAndPort">
@@ -80,6 +80,6 @@
 			<constructor-arg name="poolConfig" ref="poolConfig"></constructor-arg>
 		</bean>
 		
-		<bean class="com.taotao.content.jedis.JedisClientCluster" id="jedisCluster"></bean> -->
+		<bean class="com.taotao.content.jedis.JedisClientCluster" id="jedisCluster"></bean>
 	
 </beans>

@@ -11,6 +11,6 @@ public interface ItemService {
 	public TaotaoResult updateItem(TbItem item, String desc, String itemParams, Long itemParamId);
 	public TaotaoResult changeItemStatus(String ids, Byte status);
 	public TaotaoResult sendChangeItemMessage(final String ids);
-	public TbItem getItemById(Long id);
-	public TbItemDesc getItemDescById(Long id);
+	public TbItem getItemById(Long id) throws Exception;
+	public TbItemDesc getItemDescById(Long id) throws Exception;
 }

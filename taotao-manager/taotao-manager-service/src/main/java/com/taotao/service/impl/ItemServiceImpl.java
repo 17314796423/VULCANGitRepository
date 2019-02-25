@@ -9,7 +9,10 @@ import javax.jms.JMSException;
 import javax.jms.Message;
 import javax.jms.Session;
 
+import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.jms.core.JmsTemplate;
 import org.springframework.jms.core.MessageCreator;
 import org.springframework.stereotype.Service;
@@ -19,6 +22,8 @@ import com.github.pagehelper.PageInfo;
 import com.taotao.common.pojo.EasyUIDataGridResult;
 import com.taotao.common.pojo.TaotaoResult;
 import com.taotao.common.util.IDUtils;
+import com.taotao.common.util.JsonUtils;
+import com.taotao.jedis.JedisClient;
 import com.taotao.mapper.TbItemDescMapper;
 import com.taotao.mapper.TbItemMapper;
 import com.taotao.mapper.TbItemParamItemMapper;
@@ -45,6 +50,16 @@ public class ItemServiceImpl implements ItemService {
 	
 	@Autowired
 	private Destination destination;
+	
+	@Autowired
+	@Qualifier("jedisCluster")
+	private JedisClient jedisClient;
+	
+	@Value("${ITEM_INFO_KEY}")
+	private String ITEM_INFO_KEY;
+	
+	@Value("${ITEM_INFO_KEY_EXPIRE}")
+	private Integer ITEM_INFO_KEY_EXPIRE;
 	
 	@Override
 	public EasyUIDataGridResult<TbItem> getItemList(Integer page, Integer rows) {
@@ -182,13 +197,40 @@ public class ItemServiceImpl implements ItemService {
 	}
 
 	@Override
-	public TbItem getItemById(Long id) {
-		return itemMapper.selectByPrimaryKey(id);
+	public TbItem getItemById(Long id) throws Exception{
+		TbItem item = null;
+		String key = ITEM_INFO_KEY + ":" + id + ":BASE";
+		String jsonStr = jedisClient.get(key);
+		if(StringUtils.isNotBlank(jsonStr)) {
+			System.out.println("Item" + id + "CacheHitRatio:1.0");
+			jedisClient.expire(key, ITEM_INFO_KEY_EXPIRE);
+			return JsonUtils.jsonToPojo(jsonStr, TbItem.class);
+		}
+		System.out.println("Item" + id + "CacheHitRatio:0.0");
+		item = itemMapper.selectByPrimaryKey(id);
+		if(item != null && item.getStatus() != 3) {
+			jedisClient.set(key, JsonUtils.objectToJson(item));
+			jedisClient.expire(key, ITEM_INFO_KEY_EXPIRE);
+			return item;
+		}
+		return null;
 	}
 
 	@Override
-	public TbItemDesc getItemDescById(Long id) {
-		return itemDescMapper.selectByPrimaryKey(id);
+	public TbItemDesc getItemDescById(Long id) throws Exception{
+		TbItemDesc itemDesc = null;
+		String key = ITEM_INFO_KEY + ":" + id + ":DESC";
+		String jsonStr = jedisClient.get(key);
+		if(StringUtils.isNotBlank(jsonStr)) {
+			jedisClient.expire(key, ITEM_INFO_KEY_EXPIRE);
+			return JsonUtils.jsonToPojo(jsonStr, TbItemDesc.class);
+		}
+		itemDesc = itemDescMapper.selectByPrimaryKey(id);
+		if(itemDesc != null) {
+			jedisClient.set(key, JsonUtils.objectToJson(itemDesc));
+			jedisClient.expire(key, ITEM_INFO_KEY_EXPIRE);
+		}
+		return itemDesc;
 	}
 
 }

@@ -27,12 +27,15 @@ public class SearchItemServiceImpl implements SearchItemService{
 	private SearchItemMapper searchItemMapper;
 	
 	@Autowired
-	@Qualifier("solrServer")
+	@Qualifier("solrCluster")
 	private SolrServer solrServer;
 	
 	@Autowired
 	private SearchDao searchDao;
 
+	/**
+	 * 这个方法不用设置status==1，这个业务放到mapper的sql语句中去筛选了
+	 */
 	@Override
 	public TaotaoResult importAll2Index() throws SolrServerException, IOException {
 		List<SearchItem> list = searchItemMapper.getSearchItemList();

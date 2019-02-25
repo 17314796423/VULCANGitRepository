@@ -10,6 +10,7 @@ import javax.jms.TextMessage;
 import org.apache.solr.client.solrj.SolrServer;
 import org.apache.solr.common.SolrInputDocument;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 
 import com.taotao.common.pojo.SearchItem;
 import com.taotao.search.dao.SearchItemMapper;
@@ -20,6 +21,7 @@ public class ItemChangeMessageListener implements MessageListener{
 	private SearchItemMapper mapper;
 	
 	@Autowired
+	@Qualifier("solrCluster")
 	private SolrServer solrServer;
 	
 	@Override
@@ -46,13 +48,16 @@ public class ItemChangeMessageListener implements MessageListener{
 							doc.addField("item_category_name", item.getCategory_name());
 							doc.addField("item_desc", item.getItem_desc());
 							docs.add(doc);
+							System.out.println("更新了索引库的" + item.getId());
 						}
 						solrServer.add(docs);
 						solrServer.commit();
 					} else {
 						List<String> idsd = new ArrayList<>();
-						for (String id : split)
+						for (String id : split) {
 							idsd.add(id);
+							System.out.println("删除了索引库中的" + id);
+						}
 						solrServer.deleteById(idsd);
 						solrServer.commit();
 					}

@@ -9,8 +9,8 @@
   <packaging>war</packaging>
   <dependencies>
   		<dependency>
-				<groupId>redis.clients</groupId>
-				<artifactId>jedis</artifactId>
+			<groupId>redis.clients</groupId>
+			<artifactId>jedis</artifactId>
 		</dependency>
 		<dependency>
 			<groupId>com.taotao</groupId>
