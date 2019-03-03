@@ -9,6 +9,4 @@ public interface UserRegisterService {
 	
 	public TaotaoResult register(TbUser user);
 
-	public TaotaoResult login(String username, String password);
-
 }

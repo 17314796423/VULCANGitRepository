@@ -27,4 +27,6 @@
 	<!-- 声明需要暴露的服务接口 -->
 	<dubbo:service interface="com.taotao.sso.service.UserRegisterService"
 		ref="userRegisterServiceImpl" />
+	<dubbo:service interface="com.taotao.sso.service.UserLoginService"
+		ref="userLoginServiceImpl" />
 </beans>

@@ -75,6 +75,20 @@
 <script type="text/javascript" src="/js/jquery-1.6.4.js"></script>
 <script type="text/javascript" src="/js/jquery-extend.js"></script>
 <script type="text/javascript" src="/js/lib-v1.js" charset="utf-8"></script>
+<script type="text/javascript">
+function logout(ticket){
+	$.ajax({
+		url : "http://sso.taotao.com/user/logout/" + ticket,
+		dataType : "jsonp",
+		type : "GET",
+		success : function(data){
+			if(data.status == 200){
+				window.location.href="http://portal.taotao.com";
+			}
+		}
+	});
+}
+</script>
 <script type="text/javascript" src="/js/taotao.js" charset="utf-8"></script>
 <script type="text/javascript"> 
 	$(function() {

@@ -21,6 +21,7 @@
 	<dubbo:application name="taotao-sso-web"/>
 	<dubbo:registry protocol="zookeeper" address="192.168.25.128:2181"/>	
 	<dubbo:reference interface="com.taotao.sso.service.UserRegisterService" id="userRegisterService" timeout="3000000"/>
+	<dubbo:reference interface="com.taotao.sso.service.UserLoginService" id="userLoginService" timeout="3000000"/>
 	
 	<mvc:default-servlet-handler/>
 	
