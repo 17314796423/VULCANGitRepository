@@ -55,7 +55,7 @@ public class UserLoginServiceImpl implements UserLoginService{
 		String jsonStr = jedisClient.get(USER_INFO + ":" + token);
 		if(StringUtils.isNotBlank(jsonStr)) {
 			jedisClient.expire(USER_INFO + ":" + token, SESSION_EXPIRE);
-			return TaotaoResult.ok(JsonUtils.jsonToPojo(jsonStr, TbUser.class));
+			return TaotaoResult.ok(JsonUtils.jsonToPojo(jsonStr, TbUser.class));//转pojo为了能让web层用responsebody转json返回时候能正确解析data中的数据，而不会当字符串
 		}
 		return TaotaoResult.build(400, "用户登录已经过期，请重新登录。");
 	}

@@ -57,7 +57,7 @@
 			<a id="notice-downp" href="#none" target="_blank" clstag="shangpin|keycount|product|jiangjia">(降价通知)</a>
 		</div>
 	</li>
-	<li id="summary-market"><div class="dt">商品编号：</div><div class="dd"><span>${item.id }</span></div></li>
+	<li id="summary-market"><div class="dt">商品编号：</div><div class="dd"><span>${item.id?c }</span></div></li>
 	<li id="summary-grade">
 		<div class="dt">商品评分：</div>
 		<div class="dd">
@@ -131,7 +131,7 @@
 		        <li id="choose-result"><div class="dt"></div><div class="dd"></div></li>
 				<li id="choose-btns">
 					<div id="choose-btn-append"  class="btn">
-							<a class="btn-append " id="InitCartUrl" href="/cart/add/${item.id}.html" clstag="shangpin|keycount|product|initcarturl">加入购物车<b></b></a>
+							<a class="btn-append " id="InitCartUrl" href="javascript:addCartItem();" clstag="shangpin|keycount|product|initcarturl">加入购物车<b></b></a>
 					</div>
 					<div id="choose-btn-easybuy" class="btn"></div>
 					<div id="choose-btn-divide" class="btn"></div>
@@ -142,7 +142,7 @@
 		
 		<div id="preview">
 			<div id="spec-n1" class="jqzoom" clstag="shangpin|keycount|product|spec-n1">
-				<#if item.iamges??>			
+				<#if item.images??>			
 				<img data-img="1" width="350" height="350" src="${item.images[0]}" alt="${item.title}"  jqimg="${item.images[0]}"/>
 				<#else>
 				<img data-img="1" width="350" height="350" src="" alt="${item.title}"  jqimg=""/>
@@ -291,7 +291,7 @@
 	};
 	$(function(){
 		//取商品id
-		var itemId = "${item.id}";
+		var itemId = "${item.id?c}";
 		//给商品规格参数tab页绑定事件
 		$("#p-con-attr").bind("click", function(){
 			
@@ -302,6 +302,10 @@
 			itemControl.getItemDesc(itemId);
 		},1000);
 	});
+	function addCartItem(){
+		var num = $("#buy-num").val();
+		window.location.href = "http://cart.taotao.com/cart/add/${item.id?c}.html?num=" + num;
+	}
 </script>
 </body>
 </html>
