@@ -15,11 +15,11 @@
 			<artifactId>taotao-sso-interface</artifactId>
 			<version>0.0.1-SNAPSHOT</version>
 		</dependency>
-		<!-- <dependency>
+		<dependency>
 			<groupId>com.taotao</groupId>
-			<artifactId>taotao-manager-interface</artifactId>
+			<artifactId>taotao-cart-interface</artifactId>
 			<version>0.0.1-SNAPSHOT</version>
-		</dependency> -->
+		</dependency>
 		<!-- Spring -->
 		<dependency>
 			<groupId>org.springframework</groupId>

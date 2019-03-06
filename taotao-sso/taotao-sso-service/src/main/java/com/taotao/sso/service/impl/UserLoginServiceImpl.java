@@ -47,7 +47,7 @@ public class UserLoginServiceImpl implements UserLoginService{
 		String key = USER_INFO + ":" + UUID.randomUUID().toString();
 		jedisClient.set(key, JsonUtils.objectToJson(list.get(0)));
 		jedisClient.expire(key, SESSION_EXPIRE);
-		return TaotaoResult.ok(key.substring(key.indexOf(":") + 1));
+		return TaotaoResult.ok(key.substring(key.indexOf(":") + 1) + "," + list.get(0).getId());
 	}
 
 	@Override

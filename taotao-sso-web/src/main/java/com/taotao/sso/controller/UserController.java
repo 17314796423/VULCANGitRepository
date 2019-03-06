@@ -1,5 +1,7 @@
 package com.taotao.sso.controller;
 
+import java.util.List;
+
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
@@ -14,8 +16,11 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 
+import com.taotao.cart.service.CartService;
 import com.taotao.common.pojo.TaotaoResult;
 import com.taotao.common.util.CookieUtils;
+import com.taotao.common.util.JsonUtils;
+import com.taotao.pojo.TbItem;
 import com.taotao.pojo.TbUser;
 import com.taotao.sso.service.UserLoginService;
 import com.taotao.sso.service.UserRegisterService;
@@ -30,8 +35,14 @@ public class UserController {
 	@Autowired
 	private UserLoginService userLoginService;
 	
+	@Autowired
+	private CartService cartService;
+	
 	@Value("${TAOTAO_TOKEN_KEY}")
 	private String TAOTAO_TOKEN_KEY;
+	
+	@Value("${TT_CART_KEY}")
+	private String TT_CART_KEY;
 	
 	@RequestMapping(value="/check/{param}/{type}",method=RequestMethod.GET)
 	@ResponseBody
@@ -50,11 +61,22 @@ public class UserController {
 	public TaotaoResult login(HttpServletRequest request, HttpServletResponse response, String username, String password) {
 		TaotaoResult result = userLoginService.login(username,password);
 		if(result.getStatus() == 200) {
-			CookieUtils.setCookie(request, response, TAOTAO_TOKEN_KEY, result.getData().toString());
+			CookieUtils.setCookie(request, response, TAOTAO_TOKEN_KEY, result.getData().toString().split(",")[0]);
+			//登陆成功后，需要合并cookie中的购物车
+			mergeCookieCart2Redis(request,response,result.getData().toString().split(",")[1]);
 		}
 		return result;
 	}
 	
+	private void mergeCookieCart2Redis(HttpServletRequest request, HttpServletResponse response, String userId) {
+		String cartStr = CookieUtils.getCookieValue(request, TT_CART_KEY, true);
+		if(StringUtils.isNoneBlank(cartStr)) {   //有cookieCart就合并
+			List<TbItem> cartList = JsonUtils.jsonToList(cartStr, TbItem.class);
+			cartService.mergeCookieCart(cartList,Long.parseLong(userId));
+			CookieUtils.deleteCookie(request, response, TT_CART_KEY);
+		}
+	}
+
 	@RequestMapping(value="/token/{token}",method=RequestMethod.GET,produces=MediaType.APPLICATION_JSON_UTF8_VALUE)
 	@ResponseBody
 	public Object getUserByToken(@PathVariable("token") String token, String callback) {

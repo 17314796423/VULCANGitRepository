@@ -29,4 +29,6 @@ public interface CartService {
 
 	public TaotaoResult deleteByItemId(Long userId, Long itemId);
 	
+	public TaotaoResult mergeCookieCart(List<TbItem> cookieCart, Long userId);
+	
 }

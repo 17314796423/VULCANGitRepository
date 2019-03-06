@@ -79,4 +79,27 @@ public class CartServiceImpl implements CartService{
 		return TaotaoResult.ok();
 	}
 
+	@Override
+	public TaotaoResult mergeCookieCart(List<TbItem> cookieCart, Long userId) {
+		List<TbItem> cartList = queryCartListByUserId(userId);
+		for (TbItem cookieItem : cookieCart) {
+			Boolean flag = false;
+			for (TbItem tbItem : cartList) {
+				if(cookieItem.getId() == tbItem.getId().longValue()) {
+					System.out.println("merge" + tbItem.getId());
+					tbItem.setNum(tbItem.getNum() + cookieItem.getNum());
+					jedisClient.hset(TT_CART_REDIS_PRE_KEY + ":" + userId, tbItem.getId() + "", JsonUtils.objectToJson(tbItem));
+					flag = true;
+					break;
+				}
+			}
+			if(flag)
+				continue;
+			System.out.println("merge new" + cookieItem.getId());
+			jedisClient.hset(TT_CART_REDIS_PRE_KEY + ":" + userId, cookieItem.getId() + "", JsonUtils.objectToJson(cookieItem));
+		}
+			
+		return TaotaoResult.ok();
+	}
+
 }
