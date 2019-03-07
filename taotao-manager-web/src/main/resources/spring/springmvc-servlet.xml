@@ -27,7 +27,6 @@
 	<!-- 引用dubbo服务 -->
 	<dubbo:application name="taotao-manager-web"/>
 	<dubbo:registry protocol="zookeeper" address="192.168.25.128:2181"/>	
-	<dubbo:reference interface="com.taotao.service.TestService" id="testService" timeout="3000000"/>
 	<dubbo:reference interface="com.taotao.service.ItemService" id="itemService" timeout="3000000"/>
 	<dubbo:reference interface="com.taotao.service.ItemCatService" id="itemCatService" timeout="3000000"/>
 	<dubbo:reference interface="com.taotao.service.ItemParamService" id="itemParamService" timeout="3000000"/>
