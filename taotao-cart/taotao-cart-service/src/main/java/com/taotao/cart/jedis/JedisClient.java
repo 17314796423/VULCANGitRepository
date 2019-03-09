@@ -14,5 +14,6 @@ public interface JedisClient {
 	String hget(String key, String field);	
 	Long hdel(String key,String... field);//删除hkey
 	Map<String, String> hgetAll(String key);
+	Long del(String key);
 	
 }

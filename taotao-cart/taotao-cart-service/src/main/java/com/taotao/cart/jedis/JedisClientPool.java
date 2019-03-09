@@ -88,6 +88,12 @@ public class JedisClientPool implements JedisClient {
 	public Map<String, String> hgetAll(String key) {
 		Jedis jedis = jedisPool.getResource();
 		return jedis.hgetAll(key);
-	}	
+	}
+
+	@Override
+	public Long del(String key) {
+		Jedis jedis = jedisPool.getResource();
+		return jedis.del(key);
+	}
 
 }

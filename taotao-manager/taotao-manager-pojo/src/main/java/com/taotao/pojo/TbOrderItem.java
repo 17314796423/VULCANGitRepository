@@ -1,8 +1,15 @@
 package com.taotao.pojo;
 
+import java.io.Serializable;
 
-public class TbOrderItem {
-    private String id;
+public class TbOrderItem implements Serializable{
+
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 691253674868907086L;
+
+	private String id;
 
     private String itemId;
 
