@@ -106,9 +106,9 @@
 				<groupId>org.apache.tomcat.maven</groupId>
 				<artifactId>tomcat7-maven-plugin</artifactId>
 				<configuration>
-					<port>8089</port>
+					<port>9010</port><!-- 8089 -->
 					<path>/</path>
-					<url>http://192.168.25.139:9010/manager/text</url>
+					<url>http://192.168.25.142:9010/manager/text</url>
 					<username>tomcat</username>
 					<password>tomcat</password>
 				</configuration>

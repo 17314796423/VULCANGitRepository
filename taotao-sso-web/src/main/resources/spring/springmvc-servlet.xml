@@ -19,7 +19,7 @@
 	
 	<!-- 引用dubbo服务 -->
 	<dubbo:application name="taotao-sso-web"/>
-	<dubbo:registry protocol="zookeeper" address="192.168.25.128:2181"/>	
+	<dubbo:registry protocol="zookeeper" address="192.168.25.128:2181,192.168.25.128:2182,192.168.25.128:2183"/>	
 	<dubbo:reference interface="com.taotao.sso.service.UserRegisterService" id="userRegisterService" timeout="3000000"/>
 	<dubbo:reference interface="com.taotao.sso.service.UserLoginService" id="userLoginService" timeout="3000000"/>
 	<dubbo:reference interface="com.taotao.cart.service.CartService" id="cartService" timeout="3000000"/>

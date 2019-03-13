@@ -34,7 +34,7 @@ public class CartServiceImpl implements CartService{
 			tbItem.setNum(tbItem.getNum() + num);
 			jedisClient.hset(TT_CART_REDIS_PRE_KEY + ":" + userId, item.getId() + "", JsonUtils.objectToJson(tbItem));
 		} else {
-			item.setImage(item.getImages()[0]);
+			item.setImage(item.getImages()!=null?item.getImages()[0]:null);
 			item.setNum(num);
 			jedisClient.hset(TT_CART_REDIS_PRE_KEY + ":" + userId, item.getId() + "", JsonUtils.objectToJson(item));
 		}

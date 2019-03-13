@@ -32,7 +32,7 @@
 	</bean>
 	<!-- 引用dubbo服务 -->
 	<dubbo:application name="taotao-order-web"/>
-	<dubbo:registry protocol="zookeeper" address="192.168.25.128:2181"/>	
+	<dubbo:registry protocol="zookeeper" address="192.168.25.128:2181,192.168.25.128:2182,192.168.25.128:2183"/>	
 	<dubbo:reference interface="com.taotao.sso.service.UserLoginService" id="userLoginService" timeout="3000000"/>
 	<dubbo:reference interface="com.taotao.cart.service.CartService" id="cartService" timeout="3000000"/>
 	<dubbo:reference interface="com.taotao.order.service.OrderService" id="orderService" timeout="3000000"/>

@@ -25,7 +25,7 @@
 				<configuration>
 					<port>8088</port>
 					<path>/</path>
-					<url>http://192.168.25.139:9003/manager/text</url>
+					<url>http://192.168.25.140:9003/manager/text</url>
 					<username>tomcat</username>
 					<password>tomcat</password>
 				</configuration>

@@ -226,6 +226,7 @@ public class ItemServiceImpl implements ItemService {
 			return JsonUtils.jsonToPojo(jsonStr, TbItemDesc.class);
 		}
 		itemDesc = itemDescMapper.selectByPrimaryKey(id);
+		System.out.println(itemDesc);
 		if(itemDesc != null) {
 			jedisClient.set(key, JsonUtils.objectToJson(itemDesc));
 			jedisClient.expire(key, ITEM_INFO_KEY_EXPIRE);

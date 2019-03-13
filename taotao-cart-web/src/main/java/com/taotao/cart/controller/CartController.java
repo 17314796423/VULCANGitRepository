@@ -80,7 +80,7 @@ public class CartController {
 		//走出来代表没有匹配的商品
 		System.out.println("add new" + itemId);
 		TbItem item = itemService.getItemById(itemId);
-		item.setImage(item.getImages()[0]);
+		item.setImage(item.getImages()!=null?item.getImages()[0]:null);
 		item.setNum(num);
 		cartList.add(item);
 		CookieUtils.setCookie(request, response, TT_CART_KEY, JsonUtils.objectToJson(cartList), TT_CART_EXPIRE_TIME, true);
