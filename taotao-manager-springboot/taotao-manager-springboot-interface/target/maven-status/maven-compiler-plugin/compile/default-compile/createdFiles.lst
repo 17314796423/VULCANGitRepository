@@ -1,0 +1,10 @@
+com\taotao\service\ItemCatService.class
+META-INF\MANIFEST.MF
+com\taotao\service\ItemDescService.class
+com\taotao\service\ItemService.class
+com\taotao\service\TestService.class
+META-INF\maven\com.taotao\taotao-manager-springboot-interface\pom.properties
+META-INF\maven\com.taotao\taotao-manager-springboot-interface\pom.xml
+com\taotao\service\ItemParamItemService.class
+com\taotao\service\ItemParamService.class
+com\taotao\service\BaseService.class

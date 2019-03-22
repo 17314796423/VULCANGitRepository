@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.taotao.search.dao.SearchItemMapper">
+	<select id="getSearchItemList" resultType="com.taotao.common.pojo.SearchItem">
+		select i.id,
+			   i.title,
+			   i.sell_point,
+			   i.price,
+			   i.image,
+			   c.name category_name,
+			   d.item_desc
+		from tb_item i,
+			 tb_item_desc d,
+			 tb_item_cat c
+		where
+			i.cid = c.id
+			and
+			i.id = d.item_id
+			and
+			i.status = 1
+	</select>
+	<select id="getSearchItemListByIds" resultType="com.taotao.common.pojo.SearchItem" parameterType="java.util.List">
+		select i.id,
+			   i.title,
+			   i.sell_point,
+			   i.price,
+			   i.image,
+			   i.status,
+			   c.name category_name,
+			   d.item_desc
+		from tb_item i,
+			 tb_item_desc d,
+			 tb_item_cat c
+		where
+			i.cid = c.id
+			and
+			i.id = d.item_id
+			and
+			i.id in
+			<foreach collection="list" open="(" close=")" separator="," item="id">
+				#{id}
+			</foreach>
+	</select>
+</mapper>
