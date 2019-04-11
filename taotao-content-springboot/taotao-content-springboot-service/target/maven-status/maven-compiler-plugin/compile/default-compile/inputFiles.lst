@@ -1,0 +1,9 @@
+C:\Users\VULCAN\Workspaces\MyEclipse2017CI\taotao-content-springboot\taotao-content-springboot-service\src\main\java\com\taotao\content\service\impl\ContentServiceImpl.java
+C:\Users\VULCAN\Workspaces\MyEclipse2017CI\taotao-content-springboot\taotao-content-springboot-service\src\main\java\com\taotao\content\jedis\JedisClient.java
+C:\Users\VULCAN\Workspaces\MyEclipse2017CI\taotao-content-springboot\taotao-content-springboot-service\src\main\java\com\taotao\content\spring\config\mybatis\MyBatisConfig.java
+C:\Users\VULCAN\Workspaces\MyEclipse2017CI\taotao-content-springboot\taotao-content-springboot-service\src\main\java\com\taotao\content\spring\config\redis\RedisSpringConfig.java
+C:\Users\VULCAN\Workspaces\MyEclipse2017CI\taotao-content-springboot\taotao-content-springboot-service\src\main\java\com\taotao\content\service\impl\ContentCategoryServiceImpl.java
+C:\Users\VULCAN\Workspaces\MyEclipse2017CI\taotao-content-springboot\taotao-content-springboot-service\src\main\java\com\taotao\content\spring\config\mybatis\MapperScannerConfig.java
+C:\Users\VULCAN\Workspaces\MyEclipse2017CI\taotao-content-springboot\taotao-content-springboot-service\src\main\java\com\taotao\content\jedis\JedisClientPool.java
+C:\Users\VULCAN\Workspaces\MyEclipse2017CI\taotao-content-springboot\taotao-content-springboot-service\src\main\java\com\taotao\content\spring\config\TaotaoApplication.java
+C:\Users\VULCAN\Workspaces\MyEclipse2017CI\taotao-content-springboot\taotao-content-springboot-service\src\main\java\com\taotao\content\jedis\JedisClientCluster.java

@@ -17,10 +17,13 @@
                     <failOnMissingWebXml>false</failOnMissingWebXml>
                 </configuration>
             </plugin>
+<<<<<<< HEAD
             <plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
+=======
+>>>>>>> da6b13a6edc5c5c4b6e6ca813e8402ffa7417074
 		</plugins>
 	</build>
 	<dependencies>

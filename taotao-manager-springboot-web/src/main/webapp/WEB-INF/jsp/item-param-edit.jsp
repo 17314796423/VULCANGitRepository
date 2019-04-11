@@ -4,9 +4,13 @@
 	<tr>
 		<td id="itemCat">商品类目:
 			<input type="hidden" name="cid"/>
+<<<<<<< HEAD
 			<input type="hidden" name="flag" value="0"/>
 		</td>
 		<td></td>
+=======
+		</td>
+>>>>>>> da6b13a6edc5c5c4b6e6ca813e8402ffa7417074
 	</tr>
 	<tr class="addGroup">
 		<td>规格参数:</td>
@@ -45,12 +49,18 @@
 </div>
 <script type="text/javascript">
 	$(function(){
+<<<<<<< HEAD
 		$("#addGroupButton").click(function(){
 			  var temple = $("#itemParamEditTemplate li").eq(0).clone();
 			  if($("#itemParamEdit").find("[name='flag']").val() == "1"){
 			  	  temple.find("input[name='group']").textbox();
 			  	  temple.find("input[name='param']").textbox();
 			  }
+=======
+	
+		$("#addGroupButton").click(function(){
+			  var temple = $("#itemParamEditTemplate li").eq(0).clone();
+>>>>>>> da6b13a6edc5c5c4b6e6ca813e8402ffa7417074
 			  $(this).parent().parent().append(temple);
 			  temple.find("#addParam").click(function(){
 				  var li = $("#itemParamEditTemplate li").eq(2).clone();
@@ -58,8 +68,11 @@
 					  $(this).parent().remove();
 				  });
 				  li.appendTo($(this).parentsUntil("ul").parent());
+<<<<<<< HEAD
 				  if($("#itemParamEdit").find("[name='flag']").val() == "1")
 				  	  temple.find("input[name='param']").last().textbox();
+=======
+>>>>>>> da6b13a6edc5c5c4b6e6ca813e8402ffa7417074
 			  });
 			  temple.find("#delParam").click(function(){
 				  $(this).parent().remove();

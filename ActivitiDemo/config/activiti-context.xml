@@ -9,7 +9,11 @@ http://www.springframework.org/schema/tx http://www.springframework.org/schema/t
 
 	<bean id="processEngineConfiguration" class="org.activiti.engine.impl.cfg.StandaloneProcessEngineConfiguration">
 		<property name="jdbcDriver" value="com.mysql.jdbc.Driver"/>
+<<<<<<< HEAD
 		<property name="jdbcUrl" value="jdbc:mysql:///bos"/>
+=======
+		<property name="jdbcUrl" value="jdbc:mysql:///activiti"/>
+>>>>>>> da6b13a6edc5c5c4b6e6ca813e8402ffa7417074
 		<property name="jdbcUsername" value="ljy"/>
 		<property name="jdbcPassword" value="971113"/>
 		<property name="databaseSchemaUpdate" value="true" />

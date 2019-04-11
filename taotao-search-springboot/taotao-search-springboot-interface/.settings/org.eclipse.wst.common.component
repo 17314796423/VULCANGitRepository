@@ -2,6 +2,9 @@
     <wb-module deploy-name="taotao-search-springboot-interface">
         <wb-resource deploy-path="/" source-path="/src/main/java"/>
         <wb-resource deploy-path="/" source-path="/src/main/resources"/>
+<<<<<<< HEAD
         <wb-resource deploy-path="/" source-path="/src/test/java"/>
+=======
+>>>>>>> da6b13a6edc5c5c4b6e6ca813e8402ffa7417074
     </wb-module>
 </project-modules>

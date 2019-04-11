@@ -1,0 +1,5 @@
+127.0.0.1 - - [17/Feb/2019:22:20:26 +0800] "GET /search.html?q=Mi HTTP/1.1" 404 973 http-bio-8085-exec-1 61
+127.0.0.1 - - [17/Feb/2019:22:20:27 +0800] "GET /favicon.ico HTTP/1.1" 404 973 http-bio-8085-exec-2 3
+127.0.0.1 - - [17/Feb/2019:22:20:38 +0800] "GET /search.html?q=fadfksdajfldsa HTTP/1.1" 404 973 http-bio-8085-exec-3 14
+127.0.0.1 - - [17/Feb/2019:22:23:03 +0800] "GET /search.html?q=fadfksdajfldsa HTTP/1.1" 404 973 http-bio-8085-exec-5 2
+127.0.0.1 - - [17/Feb/2019:22:23:29 +0800] "GET / HTTP/1.1" 404 951 http-bio-8085-exec-6 8

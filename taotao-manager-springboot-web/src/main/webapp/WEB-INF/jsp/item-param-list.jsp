@@ -94,7 +94,10 @@
 							}
 						}
 					}
+<<<<<<< HEAD
 					$("#itemParamEdit [name='flag']").val("1");
+=======
+>>>>>>> da6b13a6edc5c5c4b6e6ca813e8402ffa7417074
 				}
 			}).window("open");
 		}

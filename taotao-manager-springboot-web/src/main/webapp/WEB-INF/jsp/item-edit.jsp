@@ -76,7 +76,11 @@
 			$.messager.alert('提示','表单还未填写完成!');
 			return ;
 		}
+<<<<<<< HEAD
 		$("#itemeEditForm [name='price']").val((eval($("#itemeEditForm [name=priceView]").val()) * 100).toFixed(0));
+=======
+		$("#itemeEditForm [name=price]").val(eval($("#itemeEditForm [name=priceView]").val()) * 100);
+>>>>>>> da6b13a6edc5c5c4b6e6ca813e8402ffa7417074
 		itemEditEditor.sync();
 		
 		var paramJson = [];

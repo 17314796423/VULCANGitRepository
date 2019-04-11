@@ -16,16 +16,17 @@ import org.activiti.engine.task.TaskQuery;
 import org.junit.Test;
 
 public class HelloWorld {
+
+	private static final String ACTIVITI_CONTEXT_XML = "activiti-context.xml";
+	private static final String PROCESS_ENGINE_CONFIGURATION = "processEngineConfiguration";
 	/**
 	 * 使用框架提供的自动建表方式创建23张表
 	 */
 	@SuppressWarnings("unused")
 	@Test
 	public void test1() {
-		String resource = "activiti-context.xml";// 配置文件
-		String beanName = "processEngineConfiguration";
-		// 读取配置文件，获得配置对象
-		ProcessEngineConfiguration processEngineConfiguration = ProcessEngineConfiguration.createProcessEngineConfigurationFromResource(resource, beanName);
+        // 读取配置文件，获得配置对象
+		ProcessEngineConfiguration processEngineConfiguration = ProcessEngineConfiguration.createProcessEngineConfigurationFromResource(ACTIVITI_CONTEXT_XML, PROCESS_ENGINE_CONFIGURATION);
 		ProcessEngine buildProcessEngine = processEngineConfiguration.buildProcessEngine();
 	}
 
@@ -39,8 +40,8 @@ public class HelloWorld {
 	public void test2() {
 		ProcessEngine defaultProcessEngine = ProcessEngines.getDefaultProcessEngine();
 	}
-
-	ProcessEngine processEngine = ProcessEngines.getDefaultProcessEngine();
+	
+	private ProcessEngine processEngine = ProcessEngines.getDefaultProcessEngine();
 
 	/**	 * 部署流程定义,操作的数据表：act_re_deployment(部署表)、act_re_procdef(流程定义表)、
 	 * act_ge_bytearray(二进制表)
