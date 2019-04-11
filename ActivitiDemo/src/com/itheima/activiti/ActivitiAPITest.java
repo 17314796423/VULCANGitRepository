@@ -43,11 +43,7 @@ public class ActivitiAPITest {
 		
 		ZipInputStream zipInputStream = new ZipInputStream(new FileInputStream(new File("d:\\process.zip")));
 		// 方式二：加载zip文件
-<<<<<<< HEAD
 		deploymentBuilder.addZipInputStream(zipInputStream);
-=======
-		deploymentBuilder.addZipInputStream(zipInputStream );
->>>>>>> da6b13a6edc5c5c4b6e6ca813e8402ffa7417074
 		deploymentBuilder.deploy();
 	}
 	
@@ -56,11 +52,7 @@ public class ActivitiAPITest {
 	 */
 	@Test
 	public void test2(){
-<<<<<<< HEAD
 		String deploymentId = "2401";//部署id
-=======
-		String deploymentId = "1801";//部署id
->>>>>>> da6b13a6edc5c5c4b6e6ca813e8402ffa7417074
 		boolean cascade = true;//级联删除
 		processEngine.getRepositoryService().deleteDeployment(deploymentId, cascade);
 	}
@@ -77,13 +69,8 @@ public class ActivitiAPITest {
 	@Test
 	public void test3(){
 		ProcessDefinitionQuery query = processEngine.getRepositoryService().createProcessDefinitionQuery();
-<<<<<<< HEAD
 		//query.processDefinitionKey("qjlc");//根据key过滤
 		//query.orderByProcessDefinitionVersion().asc();
-=======
-		query.processDefinitionKey("qjlc");//根据key过滤
-		query.orderByProcessDefinitionVersion().asc();
->>>>>>> da6b13a6edc5c5c4b6e6ca813e8402ffa7417074
 		List<ProcessDefinition> list = query.listPage(0, 10);
 		for (ProcessDefinition processDefinition : list) {
 			System.out.println(processDefinition.getId());
@@ -118,11 +105,7 @@ public class ActivitiAPITest {
 		InputStream pngStream = processEngine.getRepositoryService().getProcessDiagram(processDefinitionId);
 		FileUtils.copyInputStreamToFile(pngStream, new File("d:\\abc.png"));
 		InputStream bpmnStream = processEngine.getRepositoryService().getProcessModel(processDefinitionId);
-<<<<<<< HEAD
 		FileUtils.copyInputStreamToFile(bpmnStream, new File("d:\\abc.bpmn"));
-=======
-		FileUtils.copyInputStreamToFile(pngStream, new File("d:\\abc.bpmn"));
->>>>>>> da6b13a6edc5c5c4b6e6ca813e8402ffa7417074
 	}
 	
 	/**
@@ -143,11 +126,7 @@ public class ActivitiAPITest {
 	}
 	
 	/**
-<<<<<<< HEAD
 	 * 查询流程实例 表中对应execution表
-=======
-	 * 查询流程实例 
->>>>>>> da6b13a6edc5c5c4b6e6ca813e8402ffa7417074
 	 */
 	@Test
 	public void test7() throws Exception{
@@ -162,15 +141,9 @@ public class ActivitiAPITest {
 	 */
 	@Test
 	public void test8() throws Exception{
-<<<<<<< HEAD
 		String processInstanceId = "2501";
 		String deleteReason = "不请假了";
 		processEngine.getRuntimeService().deleteProcessInstance(processInstanceId, deleteReason);
-=======
-		String processInstanceId = "2001";
-		String deleteReason = "不请假了";
-		processEngine.getRuntimeService().deleteProcessInstance(processInstanceId , deleteReason );
->>>>>>> da6b13a6edc5c5c4b6e6ca813e8402ffa7417074
 	}
 	
 	/**
@@ -192,11 +165,7 @@ public class ActivitiAPITest {
 	 */
 	@Test
 	public void test10() throws Exception{
-<<<<<<< HEAD
 		String taskId = "1607";
-=======
-		String taskId = "2004";
->>>>>>> da6b13a6edc5c5c4b6e6ca813e8402ffa7417074
 		processEngine.getTaskService().complete(taskId);
 	}
 	
