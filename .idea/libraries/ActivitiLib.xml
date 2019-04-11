@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="ActivitiLib">
+    <CLASSES>
+      <root url="file://E:/黑马19期/11、第十一阶段项目：物流管理系统（12天）/bos项目-day09/资料/activiti-5.13/wars/activiti-rest/WEB-INF/lib" />
+      <root url="jar://E:/SSH/mysql-connector-java-5.1.40-bin.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+    <jarDirectory url="file://E:/黑马19期/11、第十一阶段项目：物流管理系统（12天）/bos项目-day09/资料/activiti-5.13/wars/activiti-rest/WEB-INF/lib" recursive="false" />
+  </library>
+</component>

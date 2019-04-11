@@ -1,0 +1,744 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="79beede2-7d59-431a-844d-bfeb0127b8a1" name="Default Changelist" comment="IDEA RUNNER">
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/taotao_cart_service_war.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/taotao_cart_service_war_exploded.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/taotao_cart_web_war.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/taotao_cart_web_war_exploded.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/taotao_content_service_war.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/taotao_content_service_war_exploded.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/taotao_item_web_war.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/taotao_item_web_war_exploded.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/taotao_manager_service_war.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/taotao_manager_service_war_exploded.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/taotao_manager_web_war.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/taotao_manager_web_war_exploded.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/taotao_order_service_war.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/taotao_order_service_war_exploded.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/taotao_order_web_war.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/taotao_order_web_war_exploded.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/taotao_portal_web_war.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/taotao_portal_web_war_exploded.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/taotao_search_service_war.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/taotao_search_service_war_exploded.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/taotao_search_web_war.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/taotao_search_web_war_exploded.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/taotao_sso_service_war.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/taotao_sso_service_war_exploded.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/taotao_sso_web_war.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/taotao_sso_web_war_exploded.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/ActivitiLib.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__aopalliance_aopalliance_1_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__c3p0_c3p0_0_9_1_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_druid_1_0_9.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_dubbo_2_5_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_4_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_4_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_4_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_miemiedev_mybatis_paginator_1_2_15.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_pagehelper_pagehelper_3_4_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_sgroschupf_zkclient_0_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_codec_commons_codec_1_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_fileupload_commons_fileupload_1_3_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_io_commons_io_1_3_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_io_commons_io_2_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_io_commons_io_2_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_logging_commons_logging_1_1_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_logging_commons_logging_1_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_net_commons_net_3_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_3_7_0_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_servlet_jsp_api_2_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_servlet_servlet_api_2_5.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__jline_jline_0_9_94.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__joda_time_joda_time_2_5.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__jstl_jstl_1_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_12.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__log4j_log4j_1_2_16.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__mysql_mysql_connector_java_5_1_32.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_activemq_activemq_all_5_13_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_activemq_activemq_all_sources_5_13_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_activemq_activemq_core_5_7_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_activemq_kahadb_5_7_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_activemq_protobuf_activemq_protobuf_1_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_lang3_3_3_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_pool2_2_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_geronimo_specs_geronimo_j2ee_management_1_1_spec_1_0_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_geronimo_specs_geronimo_jms_1_1_spec_1_1_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpclient_4_3_5.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpcore_4_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpcore_4_3_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpmime_4_3_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_solr_solr_solrj_4_10_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_zookeeper_zookeeper_3_4_7.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_aspectj_aspectjweaver_1_8_7.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_woodstox_wstx_asl_3_2_7.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_freemarker_freemarker_2_3_23.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_fusesource_hawtbuf_hawtbuf_1_9.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_fusesource_hawtdispatch_hawtdispatch_1_11.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_fusesource_hawtdispatch_hawtdispatch_transport_1_11.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_fusesource_mqtt_client_mqtt_client_1_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jasypt_jasypt_1_9_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_javassist_javassist_3_15_0_GA.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_mybatis_3_2_8.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_mybatis_spring_1_2_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_noggit_noggit_0_5.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_quartz_scheduler_quartz_2_2_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_6_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_6_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_7.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_log4j12_1_6_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aop_4_2_4_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aspects_4_2_4_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_beans_4_2_4_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_4_2_4_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_support_4_2_4_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_core_4_2_4_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_expression_4_2_4_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jdbc_4_2_4_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jms_4_2_4_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_messaging_4_2_4_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_tx_4_2_4_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_web_4_2_4_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_webmvc_4_2_4_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__redis_clients_jedis_2_7_2.xml" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/out/" />
+    <ignored path="$PROJECT_DIR$/ActivitiDemo/bin/" />
+    <ignored path="$PROJECT_DIR$/generatorSqlmapCustom/bin/" />
+    <ignored path="$PROJECT_DIR$/itheima-parent/bin/" />
+    <ignored path="$PROJECT_DIR$/taotao-cart/bin/" />
+    <ignored path="$PROJECT_DIR$/taotao-cart-springboot/bin/" />
+    <ignored path="$PROJECT_DIR$/taotao-cart-springboot/taotao-cart-springboot-interface/target/classes/" />
+    <ignored path="$PROJECT_DIR$/taotao-cart-springboot/taotao-cart-springboot-service/target/classes/" />
+    <ignored path="$PROJECT_DIR$/taotao-cart-springboot-web/target/classes/" />
+    <ignored path="$PROJECT_DIR$/taotao-content/bin/" />
+    <ignored path="$PROJECT_DIR$/taotao-content-springboot/bin/" />
+    <ignored path="$PROJECT_DIR$/taotao-content-springboot/taotao-content-springboot-interface/target/classes/" />
+    <ignored path="$PROJECT_DIR$/taotao-content-springboot/taotao-content-springboot-service/target/classes/" />
+    <ignored path="$PROJECT_DIR$/taotao-item-springboot-web/target/classes/" />
+    <ignored path="$PROJECT_DIR$/taotao-manager/bin/" />
+    <ignored path="$PROJECT_DIR$/taotao-manager-springboot/bin/" />
+    <ignored path="$PROJECT_DIR$/taotao-manager-springboot/taotao-manager-springboot-dao/target/classes/" />
+    <ignored path="$PROJECT_DIR$/taotao-manager-springboot/taotao-manager-springboot-interface/target/classes/" />
+    <ignored path="$PROJECT_DIR$/taotao-manager-springboot/taotao-manager-springboot-pojo/target/classes/" />
+    <ignored path="$PROJECT_DIR$/taotao-manager-springboot/taotao-manager-springboot-service/target/classes/" />
+    <ignored path="$PROJECT_DIR$/taotao-manager-springboot-web/target/classes/" />
+    <ignored path="$PROJECT_DIR$/taotao-order/bin/" />
+    <ignored path="$PROJECT_DIR$/taotao-order-springboot/bin/" />
+    <ignored path="$PROJECT_DIR$/taotao-order-springboot/taotao-order-springboot-interface/target/classes/" />
+    <ignored path="$PROJECT_DIR$/taotao-order-springboot/taotao-order-springboot-service/target/classes/" />
+    <ignored path="$PROJECT_DIR$/taotao-order-springboot-web/target/classes/" />
+    <ignored path="$PROJECT_DIR$/taotao-parent/bin/" />
+    <ignored path="$PROJECT_DIR$/taotao-portal-springboot-web/target/classes/" />
+    <ignored path="$PROJECT_DIR$/taotao-search/bin/" />
+    <ignored path="$PROJECT_DIR$/taotao-search-springboot/bin/" />
+    <ignored path="$PROJECT_DIR$/taotao-search-springboot/taotao-search-springboot-interface/target/classes/" />
+    <ignored path="$PROJECT_DIR$/taotao-search-springboot/taotao-search-springboot-service/target/classes/" />
+    <ignored path="$PROJECT_DIR$/taotao-search-springboot-web/target/classes/" />
+    <ignored path="$PROJECT_DIR$/taotao-sso/bin/" />
+    <ignored path="$PROJECT_DIR$/taotao-sso-springboot/bin/" />
+    <ignored path="$PROJECT_DIR$/taotao-sso-springboot/taotao-sso-springboot-interface/target/classes/" />
+    <ignored path="$PROJECT_DIR$/taotao-sso-springboot/taotao-sso-springboot-service/target/classes/" />
+    <ignored path="$PROJECT_DIR$/taotao-sso-springboot-web/target/classes/" />
+    <ignored path="$PROJECT_DIR$/itheima-parent/target/" />
+    <ignored path="$PROJECT_DIR$/itheima-activemq/target/" />
+    <ignored path="$PROJECT_DIR$/fastdfs_client/target/" />
+    <ignored path="$PROJECT_DIR$/itheima-freemarker/target/" />
+    <ignored path="$PROJECT_DIR$/itheima-httpclient/target/" />
+    <ignored path="$PROJECT_DIR$/taotao-manager/taotao-manager-pojo/target/" />
+    <ignored path="$PROJECT_DIR$/taotao-manager/taotao-manager-dao/target/" />
+    <ignored path="$PROJECT_DIR$/taotao-manager/taotao-manager-service/target/" />
+    <ignored path="$PROJECT_DIR$/taotao-manager/taotao-manager-interface/target/" />
+    <ignored path="$PROJECT_DIR$/taotao-manager/target/" />
+    <ignored path="$PROJECT_DIR$/taotao-common/target/" />
+    <ignored path="$PROJECT_DIR$/taotao-parent/target/" />
+    <ignored path="$PROJECT_DIR$/taotao-manager-web/target/" />
+    <ignored path="$PROJECT_DIR$/taotao-cart/taotao-cart-service/target/" />
+    <ignored path="$PROJECT_DIR$/taotao-cart/taotao-cart-interface/target/" />
+    <ignored path="$PROJECT_DIR$/taotao-cart/target/" />
+    <ignored path="$PROJECT_DIR$/taotao-cart-web/target/" />
+    <ignored path="$PROJECT_DIR$/taotao-search-web/target/" />
+    <ignored path="$PROJECT_DIR$/taotao-search/taotao-search-interface/target/" />
+    <ignored path="$PROJECT_DIR$/taotao-sso/taotao-sso-interface/target/" />
+    <ignored path="$PROJECT_DIR$/taotao-sso/taotao-sso-service/target/" />
+    <ignored path="$PROJECT_DIR$/taotao-sso-web/target/" />
+    <ignored path="$PROJECT_DIR$/taotao-portal-web/target/" />
+    <ignored path="$PROJECT_DIR$/taotao-search/target/" />
+    <ignored path="$PROJECT_DIR$/taotao-order-web/target/" />
+    <ignored path="$PROJECT_DIR$/taotao-order/taotao-order-interface/target/" />
+    <ignored path="$PROJECT_DIR$/taotao-content/taotao-content-interface/target/" />
+    <ignored path="$PROJECT_DIR$/taotao-order/taotao-order-service/target/" />
+    <ignored path="$PROJECT_DIR$/taotao-item-web/target/" />
+    <ignored path="$PROJECT_DIR$/taotao-search/taotao-search-service/target/" />
+    <ignored path="$PROJECT_DIR$/taotao-sso/target/" />
+    <ignored path="$PROJECT_DIR$/taotao-content/target/" />
+    <ignored path="$PROJECT_DIR$/taotao-content/taotao-content-service/target/" />
+    <ignored path="$PROJECT_DIR$/taotao-order/target/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DefaultGradleProjectSettings">
+    <option name="isMigrated" value="true" />
+  </component>
+  <component name="ErrorTreeViewConfiguration">
+    <option name="autoscrollToSource" value="true" />
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="true" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/ActivitiDemo/src/com/itheima/activiti/HelloWorld.java" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand />
+      <select />
+    </treeState>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1096" />
+    <option name="height" value="1905" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
+      <pane id="ProjectPane" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/taotao-portal-web/pom.xml" />
+    <property name="nodejs.mocha.mocha_node_package_dir" value="" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.33611444" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="ActivitiAPITest.test3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ActivitiDemo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.itheima.activiti.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.itheima.activiti" />
+      <option name="MAIN_CLASS_NAME" value="com.itheima.activiti.ActivitiAPITest" />
+      <option name="METHOD_NAME" value="test3" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="MavenRunConfiguration" factoryName="Maven">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list>
+                <option value="tomcat7:run" />
+              </list>
+            </option>
+            <option name="pomFileName" />
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="$PROJECT_DIR$/taotao-manager" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.ActivitiAPITest.test3" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration>C:\Users\VULCAN\AppData\Roaming\Subversion</configuration>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="79beede2-7d59-431a-844d-bfeb0127b8a1" name="Default Changelist" comment="" />
+      <created>1554880415894</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1554880415894</updated>
+      <workItem from="1554880476505" duration="219000" />
+      <workItem from="1554900299350" duration="4045000" />
+      <workItem from="1554904405448" duration="1210000" />
+      <workItem from="1554967580510" duration="2447000" />
+    </task>
+    <task id="LOCAL-00001" summary="IDEA RUNNER">
+      <created>1554969769927</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1554969769927</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="TestHistory">
+    <history-entry file="ActivitiAPITest_test3 - 2019.04.10 at 21h 09m 08s.xml">
+      <configuration name="ActivitiAPITest.test3" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ActivitiAPITest_test3 - 2019.04.10 at 21h 10m 21s.xml">
+      <configuration name="ActivitiAPITest.test3" configurationId="JUnit" />
+    </history-entry>
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="7921000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1936" height="1065" extended-state="6" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49839744" visible="true" weight="0.25746268" />
+      <window_info id="Structure" order="1" sideWeight="0.5016026" side_tool="true" weight="0.25266525" />
+      <window_info id="Designer" order="2" />
+      <window_info id="UI Designer" order="3" />
+      <window_info id="Learn" order="4" weight="0.32995737" />
+      <window_info id="Favorites" order="5" side_tool="true" />
+      <window_info id="Web" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49840087" weight="0.32975295" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32975295" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="8" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.32975295" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50159913" side_tool="true" visible="true" weight="0.32975295" />
+      <window_info anchor="bottom" id="Version Control" order="11" weight="0.32975295" />
+      <window_info anchor="bottom" id="Spring" order="12" weight="0.32975295" />
+      <window_info anchor="bottom" id="Messages" order="13" sideWeight="0.49520257" weight="0.32975295" />
+      <window_info anchor="bottom" id="Java Enterprise" order="14" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Maven" order="4" visible="true" weight="0.32995737" />
+      <window_info anchor="right" id="Palette&#9;" order="5" />
+      <window_info anchor="right" id="Database" order="6" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list />
+          </value>
+        </entry>
+        <entry key="User">
+          <value>
+            <list />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="IDEA RUNNER" />
+    <option name="LAST_COMMIT_MESSAGE" value="IDEA RUNNER" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/taotao-content-springboot/taotao-content-springboot-service/taotao-content-springboot-service.eml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/taotao-cart-springboot/taotao-cart-springboot-service/src/main/java/com/taotao/cart/spring/config/TaotaoApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="13" column="25" selection-start-line="13" selection-start-column="25" selection-end-line="13" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ActivitiDemo/config/db.properties">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ActivitiDemo/config/activiti-context.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fastdfs_client/pom.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fastdfs_client/src/main/java/org/csource/fastdfs/test/Test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ActivitiDemo/src/com/itheima/activiti/ActivitiAPITest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="826">
+          <caret line="95" column="5" selection-start-line="95" selection-start-column="5" selection-end-line="95" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/generatorSqlmapCustom/src/GeneratorSqlmap.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/itheima-activemq/src/main/java/com/itheima/activemq/topic/TopicProducer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" column="16" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/itheima-parent/pom.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/taotao-cart/taotao-cart-service/src/main/java/com/taotao/cart/jedis/JedisClientCluster.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/itheima-activemq/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="5" column="21" selection-start-line="5" selection-start-column="21" selection-end-line="5" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/itheima-activemq/src/main/java/com/itheima/activemq/queue/ActiveMQCustomer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/taotao-manager/taotao-manager-service/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1630" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/taotao-manager/taotao-manager-dao/src/main/java/com/taotao/mapper/TbItemMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/taotao-manager/taotao-manager-service/src/main/java/com/taotao/service/impl/ItemServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="36" column="13" selection-start-line="36" selection-start-column="13" selection-end-line="36" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/taotao-manager-web/src/main/java/com/taotao/managerweb/util/FastDFSClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="437">
+          <caret line="28" column="13" lean-forward="true" selection-start-line="28" selection-start-column="13" selection-end-line="28" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://MAVEN/com.taotao:taotao-manager-service:0.0.1-SNAPSHOT">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>MAVEN</ID>
+          <OriginalElement>com.taotao:taotao-manager-service:0.0.1-SNAPSHOT</OriginalElement>
+          <nodes>
+            <node x="" y="">com.taotao:taotao-manager-service:0.0.1-SNAPSHOT</node>
+            <node x="" y="">redis.clients:jedis:jar:2.7.2</node>
+            <node x="" y="">redis.clients:jedis:jar:2.7.2/org.apache.commons:commons-pool2:jar:2.3</node>
+            <node x="" y="">junit:junit:jar:4.12</node>
+            <node x="" y="">junit:junit:jar:4.12/org.hamcrest:hamcrest-core:jar:1.3</node>
+            <node x="" y="">com.taotao:taotao-manager-dao:jar:0.0.1-SNAPSHOT</node>
+            <node x="" y="">com.taotao:taotao-manager-dao:jar:0.0.1-SNAPSHOT/com.taotao:taotao-manager-pojo:jar:0.0.1-SNAPSHOT</node>
+            <node x="" y="">com.taotao:taotao-manager-dao:jar:0.0.1-SNAPSHOT/org.mybatis:mybatis:jar:3.2.8</node>
+            <node x="" y="">com.taotao:taotao-manager-dao:jar:0.0.1-SNAPSHOT/org.mybatis:mybatis-spring:jar:1.2.2</node>
+            <node x="" y="">com.taotao:taotao-manager-dao:jar:0.0.1-SNAPSHOT/com.github.miemiedev:mybatis-paginator:jar:1.2.15</node>
+            <node x="" y="">com.taotao:taotao-manager-dao:jar:0.0.1-SNAPSHOT/com.github.miemiedev:mybatis-paginator:jar:1.2.15/org.slf4j:slf4j-api:jar:1.7.2</node>
+            <node x="" y="">com.taotao:taotao-manager-dao:jar:0.0.1-SNAPSHOT/mysql:mysql-connector-java:jar:5.1.32</node>
+            <node x="" y="">com.taotao:taotao-manager-dao:jar:0.0.1-SNAPSHOT/com.alibaba:druid:jar:1.0.9</node>
+            <node x="" y="">com.taotao:taotao-manager-dao:jar:0.0.1-SNAPSHOT/com.alibaba:druid:jar:1.0.9/com.alibaba:jconsole:jar:1.8.0</node>
+            <node x="" y="">com.taotao:taotao-manager-dao:jar:0.0.1-SNAPSHOT/com.alibaba:druid:jar:1.0.9/com.alibaba:tools:jar:1.8.0</node>
+            <node x="" y="">com.taotao:taotao-manager-interface:jar:0.0.1-SNAPSHOT</node>
+            <node x="" y="">org.springframework:spring-context:jar:4.2.4.RELEASE</node>
+            <node x="" y="">org.springframework:spring-context:jar:4.2.4.RELEASE/org.springframework:spring-aop:jar:4.2.4.RELEASE</node>
+            <node x="" y="">org.springframework:spring-context:jar:4.2.4.RELEASE/org.springframework:spring-aop:jar:4.2.4.RELEASE/aopalliance:aopalliance:jar:1.0</node>
+            <node x="" y="">org.springframework:spring-context:jar:4.2.4.RELEASE/org.springframework:spring-core:jar:4.2.4.RELEASE</node>
+            <node x="" y="">org.springframework:spring-context:jar:4.2.4.RELEASE/org.springframework:spring-core:jar:4.2.4.RELEASE/commons-logging:commons-logging:jar:1.2</node>
+            <node x="" y="">org.springframework:spring-context:jar:4.2.4.RELEASE/org.springframework:spring-expression:jar:4.2.4.RELEASE</node>
+            <node x="" y="">org.springframework:spring-beans:jar:4.2.4.RELEASE</node>
+            <node x="" y="">org.springframework:spring-webmvc:jar:4.2.4.RELEASE</node>
+            <node x="" y="">org.springframework:spring-webmvc:jar:4.2.4.RELEASE/org.springframework:spring-web:jar:4.2.4.RELEASE</node>
+            <node x="" y="">org.springframework:spring-jdbc:jar:4.2.4.RELEASE</node>
+            <node x="" y="">org.springframework:spring-jdbc:jar:4.2.4.RELEASE/org.springframework:spring-tx:jar:4.2.4.RELEASE</node>
+            <node x="" y="">org.springframework:spring-aspects:jar:4.2.4.RELEASE</node>
+            <node x="" y="">org.springframework:spring-aspects:jar:4.2.4.RELEASE/org.aspectj:aspectjweaver:jar:1.8.7</node>
+            <node x="" y="">org.springframework:spring-jms:jar:4.2.4.RELEASE</node>
+            <node x="" y="">org.springframework:spring-jms:jar:4.2.4.RELEASE/org.springframework:spring-messaging:jar:4.2.4.RELEASE</node>
+            <node x="" y="">org.springframework:spring-context-support:jar:4.2.4.RELEASE</node>
+            <node x="" y="">com.alibaba:dubbo:jar:2.5.3</node>
+            <node x="" y="">com.alibaba:dubbo:jar:2.5.3/org.javassist:javassist:jar:3.15.0-GA</node>
+            <node x="" y="">org.apache.zookeeper:zookeeper:jar:3.4.7</node>
+            <node x="" y="">org.apache.zookeeper:zookeeper:jar:3.4.7/org.slf4j:slf4j-api:jar:1.6.1</node>
+            <node x="" y="">org.apache.zookeeper:zookeeper:jar:3.4.7/org.slf4j:slf4j-log4j12:jar:1.6.4</node>
+            <node x="" y="">org.apache.zookeeper:zookeeper:jar:3.4.7/log4j:log4j:jar:1.2.16</node>
+            <node x="" y="">org.apache.zookeeper:zookeeper:jar:3.4.7/jline:jline:jar:0.9.94</node>
+            <node x="" y="">org.apache.zookeeper:zookeeper:jar:3.4.7/io.netty:netty:jar:3.7.0.Final</node>
+            <node x="" y="">com.github.sgroschupf:zkclient:jar:0.1</node>
+            <node x="" y="">com.github.sgroschupf:zkclient:jar:0.1/log4j:log4j:jar:1.2.14</node>
+            <node x="" y="">com.github.pagehelper:pagehelper:jar:3.4.2</node>
+            <node x="" y="">org.apache.activemq:activemq-core:jar:5.7.0</node>
+            <node x="" y="">org.apache.activemq:activemq-core:jar:5.7.0/org.slf4j:slf4j-api:jar:1.6.6</node>
+            <node x="" y="">org.apache.activemq:activemq-core:jar:5.7.0/org.apache.geronimo.specs:geronimo-jms_1.1_spec:jar:1.1.1</node>
+            <node x="" y="">org.apache.activemq:activemq-core:jar:5.7.0/org.apache.activemq:kahadb:jar:5.7.0</node>
+            <node x="" y="">org.apache.activemq:activemq-core:jar:5.7.0/org.apache.activemq:kahadb:jar:5.7.0/org.slf4j:slf4j-api:jar:1.6.1</node>
+            <node x="" y="">org.apache.activemq:activemq-core:jar:5.7.0/org.apache.activemq.protobuf:activemq-protobuf:jar:1.1</node>
+            <node x="" y="">org.apache.activemq:activemq-core:jar:5.7.0/org.fusesource.mqtt-client:mqtt-client:jar:1.3</node>
+            <node x="" y="">org.apache.activemq:activemq-core:jar:5.7.0/org.fusesource.mqtt-client:mqtt-client:jar:1.3/org.fusesource.hawtdispatch:hawtdispatch-transport:jar:1.11</node>
+            <node x="" y="">org.apache.activemq:activemq-core:jar:5.7.0/org.fusesource.mqtt-client:mqtt-client:jar:1.3/org.fusesource.hawtdispatch:hawtdispatch-transport:jar:1.11/org.fusesource.hawtdispatch:hawtdispatch:jar:1.11</node>
+            <node x="" y="">org.apache.activemq:activemq-core:jar:5.7.0/org.fusesource.mqtt-client:mqtt-client:jar:1.3/org.fusesource.hawtbuf:hawtbuf:jar:1.9</node>
+            <node x="" y="">org.apache.activemq:activemq-core:jar:5.7.0/org.apache.geronimo.specs:geronimo-j2ee-management_1.1_spec:jar:1.0.1</node>
+            <node x="" y="">org.apache.activemq:activemq-core:jar:5.7.0/commons-net:commons-net:jar:3.3</node>
+            <node x="" y="">org.apache.activemq:activemq-core:jar:5.7.0/org.jasypt:jasypt:jar:1.9.0</node>
+            <node x="" y="">com.taotao:taotao-common:jar:0.0.1-SNAPSHOT</node>
+            <node x="" y="">com.taotao:taotao-common:jar:0.0.1-SNAPSHOT/joda-time:joda-time:jar:2.5</node>
+            <node x="" y="">com.taotao:taotao-common:jar:0.0.1-SNAPSHOT/org.apache.commons:commons-lang3:jar:3.3.2</node>
+            <node x="" y="">com.taotao:taotao-common:jar:0.0.1-SNAPSHOT/commons-io:commons-io:jar:1.3.2</node>
+            <node x="" y="">com.taotao:taotao-common:jar:0.0.1-SNAPSHOT/com.fasterxml.jackson.core:jackson-databind:jar:2.4.2</node>
+            <node x="" y="">com.taotao:taotao-common:jar:0.0.1-SNAPSHOT/com.fasterxml.jackson.core:jackson-databind:jar:2.4.2/com.fasterxml.jackson.core:jackson-annotations:jar:2.4.0</node>
+            <node x="" y="">com.taotao:taotao-common:jar:0.0.1-SNAPSHOT/com.fasterxml.jackson.core:jackson-databind:jar:2.4.2/com.fasterxml.jackson.core:jackson-core:jar:2.4.2</node>
+            <node x="" y="">com.taotao:taotao-common:jar:0.0.1-SNAPSHOT/org.apache.httpcomponents:httpclient:jar:4.3.5</node>
+            <node x="" y="">com.taotao:taotao-common:jar:0.0.1-SNAPSHOT/org.apache.httpcomponents:httpclient:jar:4.3.5/org.apache.httpcomponents:httpcore:jar:4.3.2</node>
+            <node x="" y="">com.taotao:taotao-common:jar:0.0.1-SNAPSHOT/org.apache.httpcomponents:httpclient:jar:4.3.5/commons-logging:commons-logging:jar:1.1.3</node>
+            <node x="" y="">com.taotao:taotao-common:jar:0.0.1-SNAPSHOT/org.apache.httpcomponents:httpclient:jar:4.3.5/commons-codec:commons-codec:jar:1.6</node>
+            <node x="" y="">com.taotao:taotao-common:jar:0.0.1-SNAPSHOT/org.quartz-scheduler:quartz:jar:2.2.2</node>
+            <node x="" y="">com.taotao:taotao-common:jar:0.0.1-SNAPSHOT/org.quartz-scheduler:quartz:jar:2.2.2/c3p0:c3p0:jar:0.9.1.1</node>
+            <node x="" y="">com.taotao:taotao-common:jar:0.0.1-SNAPSHOT/org.quartz-scheduler:quartz:jar:2.2.2/org.slf4j:slf4j-api:jar:1.7.7</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="1.122435174746336" x="361.0" y="1571.0" />
+          <SelectedNodes />
+          <Categories />
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>All</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/taotao-cart-web/src/main/java/com/taotao/cart/controller/CartController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="199">
+          <caret line="16" column="30" selection-start-line="16" selection-start-column="30" selection-end-line="16" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/taotao-portal-web/src/main/java/com/taotao/portal/controller/IndexController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="14" column="42" lean-forward="true" selection-start-line="14" selection-start-column="42" selection-end-line="14" selection-end-column="42" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/taotao-order-web/src/main/java/com/taotao/order/interceptor/LoginInterceptor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="199">
+          <caret line="14" column="29" selection-start-line="14" selection-start-column="29" selection-end-line="14" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/taotao-sso/taotao-sso-interface/src/main/java/com/taotao/sso/service/UserLoginService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ActivitiDemo/src/com/itheima/activiti/HelloWorld.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="45" lean-forward="true" selection-start-line="45" selection-end-line="45" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.33611444" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>Spring (taotao-sso-web)|Spring</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.33611444" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.33611444" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.7</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.33611444" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>taotao-sso-interface</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.33611444" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>ActivitiLib</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.33611444" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>
