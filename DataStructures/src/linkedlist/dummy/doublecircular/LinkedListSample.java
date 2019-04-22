@@ -189,7 +189,7 @@ public class LinkedListSample<E> {
 
     public static void main(String[] args) {
         LinkedListSample<Integer> linkedList = new LinkedListSample<>();
-        for(int i = 0 ; i < 10 ; i ++){
+        for (int i = 0; i < 10; i++) {
             linkedList.addFirst(i);
             System.out.println(linkedList);
         }
@@ -212,11 +212,11 @@ public class LinkedListSample<E> {
         linkedList.removeLast();
         System.out.println(linkedList);
 
-        linkedList.add(7,777);
+        linkedList.add(7, 777);
         System.out.println(linkedList.get(7));
         System.out.println(linkedList);
 
-        linkedList.set(7,888);
+        linkedList.set(7, 888);
         System.out.println(linkedList.get(7));
         System.out.println(linkedList);
     }

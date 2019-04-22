@@ -8,23 +8,23 @@ public class LinkedList<E> {
         public Node next;
         public Node prev;
 
-        public Node(E e, Node next, Node prev){
+        public Node(E e, Node next, Node prev) {
             this.e = e;
             this.next = next;
             this.prev = prev;
         }
 
-        public Node(E e){
-            this(e,null,null);
+        public Node(E e) {
+            this(e, null, null);
         }
 
-        public Node(){
-            this(null,null,null);
+        public Node() {
+            this(null, null, null);
         }
 
         @Override
-        public String toString(){
-            return  e.toString();
+        public String toString() {
+            return e.toString();
         }
 
     }
@@ -32,45 +32,45 @@ public class LinkedList<E> {
     private Node dummyHead;
     private int size;
 
-    public int getSize(){
-        return  size;
+    public int getSize() {
+        return size;
     }
 
-    public LinkedList(){
+    public LinkedList() {
         dummyHead = new Node();
         dummyHead.next = dummyHead;
         dummyHead.prev = dummyHead;
         size = 0;
     }
 
-    public boolean isEmpty(){
+    public boolean isEmpty() {
         return size == 0;
     }
 
-    private void doAdd(int index,E e) {
+    private void doAdd(int index, E e) {
         Node prev = dummyHead;
-        if(isPrev(index)) {
-            for(int i = 0; i < index; i ++){
+        if (isPrev(index)) {
+            for (int i = 0; i < index; i++) {
                 prev = prev.next;
             }
             prev.next = new Node(e, prev.next, prev);
             prev.next.next.prev = prev.next;
         } else {
-            for(int i = 0; i < size - index; i ++){
+            for (int i = 0; i < size - index; i++) {
                 prev = prev.prev;
             }
             prev.prev = new Node(e, prev, prev.prev);
             prev.prev.prev.next = prev.prev;
         }
-        size ++;
+        size++;
     }
 
-    public void addFirst(E e){
-        add(0,e);
+    public void addFirst(E e) {
+        add(0, e);
     }
 
-    public void add(int index, E e){
-        if(index < 0 || index > size)
+    public void add(int index, E e) {
+        if (index < 0 || index > size)
             throw new IllegalArgumentException("Add failed. Illegal index.");
         doAdd(index, e);
     }
@@ -79,11 +79,11 @@ public class LinkedList<E> {
         add(size, e);
     }
 
-    private E doRemove(int index){
+    private E doRemove(int index) {
         Node prev = dummyHead;
         Node ret;
-        if(isPrev(index)){
-            for(int i = 0; i < index; i ++){
+        if (isPrev(index)) {
+            for (int i = 0; i < index; i++) {
                 prev = prev.next;
             }
             ret = prev.next;
@@ -99,40 +99,40 @@ public class LinkedList<E> {
         }
         ret.next = null;
         ret.prev = null;
-        size --;
+        size--;
         return ret.e;
     }
 
-    public E removeFirst(){
+    public E removeFirst() {
         return remove(0);
     }
 
-    public E remove(int index){
-        if(index < 0 || index >= size)
+    public E remove(int index) {
+        if (index < 0 || index >= size)
             throw new IllegalArgumentException("Remove failed. Illegal index.");
         return doRemove(index);
     }
 
-    public E removeLast(){
+    public E removeLast() {
         return remove(size - 1);
     }
 
-    public E get(int index){
-        if(index < 0 || index >= size)
+    public E get(int index) {
+        if (index < 0 || index >= size)
             throw new IllegalArgumentException("Get failed. Illegal index.");
         return getCur(index).e;
     }
 
-    public E getFirst(){
+    public E getFirst() {
         return get(0);
     }
 
-    public E getLast(){
+    public E getLast() {
         return get(size - 1);
     }
 
-    public void set(int index, E e){
-        if(index < 0 || index >= size)
+    public void set(int index, E e) {
+        if (index < 0 || index >= size)
             throw new IllegalArgumentException("Set failed. Illegal index.");
         getCur(index).e = e;
     }
@@ -147,7 +147,7 @@ public class LinkedList<E> {
 
     private Node getCur(int index) {
         Node cur;
-        if(isPrev(index)) {
+        if (isPrev(index)) {
             cur = dummyHead.next;
             for (int i = 0; i < index; i++)
                 cur = cur.next;
@@ -160,25 +160,25 @@ public class LinkedList<E> {
     }
 
     private boolean isPrev(int index) {
-        return index < size/2;
+        return index < size / 2;
     }
 
-    public boolean contains(E e){
+    public boolean contains(E e) {
         /*Node cur = dummyHead.next;
         for (int i = 0; i < size; i++) {
             if(cur.e.equals(e))
                 return true;
             cur = cur.next;
         }*/
-        for(Node cur = dummyHead.next;cur != null;cur = cur.next){
-            if(cur.e.equals(e))
+        for (Node cur = dummyHead.next; cur != null; cur = cur.next) {
+            if (cur.e.equals(e))
                 return true;
         }
         return false;
     }
 
     @Override
-    public String toString(){
+    public String toString() {
         StringBuilder sb = new StringBuilder("[");
         Node cur = dummyHead.next;
         for (; !cur.equals(dummyHead); ) {
@@ -191,7 +191,7 @@ public class LinkedList<E> {
 
     public static void main(String[] args) {
         LinkedList<Integer> linkedList = new LinkedList<>();
-        for(int i = 0 ; i < 10 ; i ++){
+        for (int i = 0; i < 10; i++) {
             linkedList.addFirst(i);
             System.out.println(linkedList);
         }
@@ -202,16 +202,16 @@ public class LinkedList<E> {
         linkedList.remove(2);
         System.out.println(linkedList);
 
-        linkedList.add(9,666);
+        linkedList.add(9, 666);
         System.out.println(linkedList);
 
         linkedList.remove(9);
         System.out.println(linkedList);
 
-        linkedList.add(7,777);
+        linkedList.add(7, 777);
         System.out.println(linkedList.get(7));
         System.out.println(linkedList);
-        linkedList.set(7,888);
+        linkedList.set(7, 888);
         System.out.println(linkedList.get(7));
         System.out.println(linkedList);
     }

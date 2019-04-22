@@ -6,23 +6,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0a8971dc-a265-48b6-98ab-851e25d936ec" name="Default Changelist" comment="Stack">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/linkedlist/LinkedList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/linkedlist/Solution.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/linkedlist/dummy/LinkedList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/linkedlist/dummy/doublecircular/LinkedList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/linkedlist/dummy/doublecircular/LinkedListSample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/queue/ArrayQueue.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/queue/LinkedListQueue.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/queue/LoopQueue.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/queue/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/queue/Queue.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/recursion/Sum.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/stack/LinkedListStack.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/stack/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ActivitiDemo/ActivitiDemo.eml" beforeDir="false" afterPath="$PROJECT_DIR$/../ActivitiDemo/ActivitiDemo.eml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tree/binarysearchtree/BST.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tree/binarysearchtree/BSTBasic.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tree/binarysearchtree/BSTNonRec.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DataStructures/META-INF/DataStructures.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DataStructures/linkedlist/dummy/loopdoublehead/LinkedList$Node.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DataStructures/linkedlist/dummy/loopdoublehead/LinkedList.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DataStructures/linkedlist/dummy/loopdoublehead/LinkedListSample$Node.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DataStructures/linkedlist/dummy/loopdoublehead/LinkedListSample.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/linkedlist/dummy/doublecircular/LinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/linkedlist/dummy/doublecircular/LinkedList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/linkedlist/dummy/doublecircular/LinkedListSample.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/linkedlist/dummy/doublecircular/LinkedListSample.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -36,26 +30,38 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/linkedlist/dummy/doublecircular/LinkedList.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/tree/binarysearchtree/BST.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="451">
-              <caret line="181" column="50" lean-forward="true" selection-start-line="181" selection-start-column="50" selection-end-line="181" selection-end-column="50" />
+            <state relative-caret-position="501">
+              <caret line="43" selection-start-line="43" selection-end-line="43" />
               <folding>
-                <element signature="e#338#339#0" expanded="true" />
-                <element signature="e#379#380#0" expanded="true" />
-                <element signature="e#403#404#0" expanded="true" />
-                <element signature="e#447#448#0" expanded="true" />
-                <element signature="e#500#501#0" expanded="true" />
                 <element signature="e#544#545#0" expanded="true" />
-                <element signature="e#629#630#0" expanded="true" />
-                <element signature="e#657#658#0" expanded="true" />
-                <element signature="e#842#843#0" expanded="true" />
-                <element signature="e#874#875#0" expanded="true" />
-                <element signature="e#1447#1448#0" expanded="true" />
-                <element signature="e#1471#1472#0" expanded="true" />
-                <element signature="e#1688#1689#0" expanded="true" />
-                <element signature="e#1716#1717#0" expanded="true" />
+                <element signature="e#570#571#0" expanded="true" />
+                <element signature="e#887#888#0" expanded="true" />
+                <element signature="e#942#943#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/tree/binarysearchtree/BSTBasic.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="292">
+              <caret line="39" column="25" lean-forward="true" selection-start-line="39" selection-start-column="25" selection-end-line="39" selection-end-column="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/tree/binarysearchtree/BSTNonRec.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="615">
+              <caret line="59" column="27" lean-forward="true" selection-start-line="59" selection-start-column="27" selection-end-line="59" selection-end-column="27" />
+              <folding>
+                <element signature="e#997#998#0" expanded="true" />
+                <element signature="e#1058#1059#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -97,6 +103,10 @@
         <option value="$PROJECT_DIR$/src/linkedlist/dummy/loopdoublehead/LinkedListSample.java" />
         <option value="$PROJECT_DIR$/src/linkedlist/dummy/loopdoublehead/LinkedList.java" />
         <option value="$PROJECT_DIR$/src/linkedlist/dummy/doublecircular/LinkedList.java" />
+        <option value="$PROJECT_DIR$/src/linkedlist/dummy/doublecircular/LinkedListSample.java" />
+        <option value="$PROJECT_DIR$/src/tree/binarysearchtree/BSTNonRec.java" />
+        <option value="$PROJECT_DIR$/src/tree/binarysearchtree/BST.java" />
+        <option value="$PROJECT_DIR$/src/tree/binarysearchtree/BSTBasic.java" />
       </list>
     </option>
   </component>
@@ -112,9 +122,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="ProjectPane" />
-      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="ProjectPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -122,16 +132,18 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="extract.method.default.visibility" value="private" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/Test/src" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/tree/binarysearchtree" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="tree.binarysearchtree" />
       <recent name="linkedlist.dummy.loopdoublehead" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\VULCAN\Desktop\gitRepository\DataStructures\src\tree\binarysearchtree" />
       <recent name="C:\Users\VULCAN\Desktop\gitRepository\DataStructures\Test\src" />
       <recent name="C:\Users\VULCAN\Desktop\gitRepository\DataStructures\src\stack" />
       <recent name="C:\Users\VULCAN\Desktop\gitRepository\DataStructures\src\queue" />
@@ -150,7 +162,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.LinkedList1">
+  <component name="RunManager" selected="Application.LinkedList">
     <configuration name="LinkedList" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="linkedlist.LinkedList" />
       <module name="DataStructures" />
@@ -164,34 +176,34 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LinkedList" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="linkedlist.dummy.doublecircular.LinkedList" />
-      <module name="DataStructures" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="linkedlist.dummy.doublecircular.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="LinkedList" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="linkedlist.dummy.doublecircular.LinkedList" />
-      <module name="DataStructures" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="linkedlist.dummy.doublecircular.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="LinkedListSample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="linkedlist.dummy.doublecircular.LinkedListSample" />
+      <module name="DataStructures" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="linkedlist.dummy.doublecircular.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LinkedList" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="linkedlist.dummy.doublecircular.LinkedList" />
+      <module name="DataStructures" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="linkedlist.dummy.doublecircular.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LinkedList" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="linkedlist.dummy.doublecircular.LinkedList" />
       <module name="DataStructures" />
       <extension name="coverage">
         <pattern>
@@ -218,9 +230,7 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.LinkedList1" />
         <item itemvalue="Application.LinkedListSample" />
-        <item itemvalue="Application.LinkedList (1)" />
         <item itemvalue="Application.LinkedList" />
         <item itemvalue="Application.Solution" />
       </list>
@@ -248,7 +258,8 @@
       <workItem from="1555587070312" duration="67000" />
       <workItem from="1555664784632" duration="384000" />
       <workItem from="1555841820433" duration="7977000" />
-      <workItem from="1555850335174" duration="3644000" />
+      <workItem from="1555850335174" duration="4264000" />
+      <workItem from="1555921531255" duration="4914000" />
     </task>
     <task id="LOCAL-00001" summary="Stack">
       <created>1555392287262</created>
@@ -261,13 +272,12 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="46621000" />
+    <option name="totallyTimeSpent" value="52155000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1065" extended-state="7" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1936" height="1065" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.12953092" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.13059701" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="UI Designer" order="3" />
@@ -275,7 +285,7 @@
       <window_info id="Favorites" order="5" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.28893661" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.28893661" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39957035" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -493,25 +503,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/linkedlist/dummy/doublecircular/LinkedList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="146" column="21" selection-start-line="146" selection-start-column="21" selection-end-line="146" selection-end-column="21" />
-          <folding>
-            <element signature="e#2780#2781#0" expanded="true" />
-            <element signature="e#2819#2820#0" expanded="true" />
-            <element signature="e#3033#3034#0" expanded="true" />
-            <element signature="e#3062#3063#0" expanded="true" />
-            <element signature="e#3088#3089#0" expanded="true" />
-            <element signature="e#3124#3125#0" expanded="true" />
-            <element signature="e#3349#3350#0" expanded="true" />
-            <element signature="e#3374#3375#0" expanded="true" />
-            <element signature="e#3406#3407#0" expanded="true" />
-            <element signature="e#3438#3439#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/linkedlist/dummy/LinkedList.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="19">
@@ -540,30 +531,55 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/linkedlist/dummy/doublecircular/LinkedListSample.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="536">
-          <caret line="217" lean-forward="true" selection-start-line="217" selection-end-line="217" />
+        <state relative-caret-position="183">
+          <caret line="193" column="43" selection-end-line="225" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/linkedlist/dummy/doublecircular/LinkedList.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="451">
-          <caret line="181" column="50" lean-forward="true" selection-start-line="181" selection-start-column="50" selection-end-line="181" selection-end-column="50" />
+        <state relative-caret-position="236">
+          <caret line="147" column="36" selection-end-line="219" />
           <folding>
-            <element signature="e#338#339#0" expanded="true" />
-            <element signature="e#379#380#0" expanded="true" />
-            <element signature="e#403#404#0" expanded="true" />
-            <element signature="e#447#448#0" expanded="true" />
-            <element signature="e#500#501#0" expanded="true" />
-            <element signature="e#544#545#0" expanded="true" />
-            <element signature="e#629#630#0" expanded="true" />
-            <element signature="e#657#658#0" expanded="true" />
-            <element signature="e#842#843#0" expanded="true" />
-            <element signature="e#874#875#0" expanded="true" />
-            <element signature="e#1447#1448#0" expanded="true" />
-            <element signature="e#1471#1472#0" expanded="true" />
+            <element signature="e#383#384#0" expanded="true" />
+            <element signature="e#454#455#0" expanded="true" />
+            <element signature="e#551#552#0" expanded="true" />
+            <element signature="e#664#665#0" expanded="true" />
+            <element signature="e#883#884#0" expanded="true" />
+            <element signature="e#1485#1486#0" expanded="true" />
             <element signature="e#1688#1689#0" expanded="true" />
             <element signature="e#1716#1717#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/tree/binarysearchtree/BST.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="501">
+          <caret line="43" selection-start-line="43" selection-end-line="43" />
+          <folding>
+            <element signature="e#544#545#0" expanded="true" />
+            <element signature="e#570#571#0" expanded="true" />
+            <element signature="e#887#888#0" expanded="true" />
+            <element signature="e#942#943#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/tree/binarysearchtree/BSTBasic.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="292">
+          <caret line="39" column="25" lean-forward="true" selection-start-line="39" selection-start-column="25" selection-end-line="39" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/tree/binarysearchtree/BSTNonRec.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="615">
+          <caret line="59" column="27" lean-forward="true" selection-start-line="59" selection-start-column="27" selection-end-line="59" selection-end-column="27" />
+          <folding>
+            <element signature="e#997#998#0" expanded="true" />
+            <element signature="e#1058#1059#0" expanded="true" />
           </folding>
         </state>
       </provider>
