@@ -29,6 +29,8 @@
 	</classpathentry>
 	<classpathentry kind="lib" path="D:/Java/jdk1.7.0/lib/jconsole.jar"/>
 	<classpathentry kind="lib" path="D:/Java/jdk1.7.0/lib/tools.jar"/>
+	<classpathentry kind="lib" path="D:/Java/jdk1.7.0/lib/jconsole.jar"/>
+	<classpathentry kind="lib" path="D:/Java/jdk1.7.0/lib/tools.jar"/>
 	<classpathentry combineaccessrules="false" kind="src" path="/taotao-search-interface"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Maven: org.springframework:spring-context:4.2.4.RELEASE"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Maven: org.springframework:spring-aop:4.2.4.RELEASE"/>

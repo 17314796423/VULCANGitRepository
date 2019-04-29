@@ -24,6 +24,8 @@
 	</classpathentry>
 	<classpathentry kind="lib" path="D:/Java/jdk1.7.0/lib/jconsole.jar"/>
 	<classpathentry kind="lib" path="D:/Java/jdk1.7.0/lib/tools.jar"/>
+	<classpathentry kind="lib" path="D:/Java/jdk1.7.0/lib/jconsole.jar"/>
+	<classpathentry kind="lib" path="D:/Java/jdk1.7.0/lib/tools.jar"/>
 	<classpathentry combineaccessrules="false" kind="src" path="/taotao-manager-pojo"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Maven: org.mybatis:mybatis:3.2.8"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Maven: org.mybatis:mybatis-spring:1.2.2"/>
