@@ -5,9 +5,7 @@
     <bookmark url="file://$PROJECT_DIR$/src/queue/Main.java" line="25" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0a8971dc-a265-48b6-98ab-851e25d936ec" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="0a8971dc-a265-48b6-98ab-851e25d936ec" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -33,7 +31,7 @@
         <entry file="file://$PROJECT_DIR$/src/array/Array.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="114">
-              <caret line="7" column="34" lean-forward="true" selection-start-line="7" selection-start-column="34" selection-end-line="7" selection-end-column="34" />
+              <caret line="7" column="34" selection-start-line="7" selection-start-column="34" selection-end-line="7" selection-end-column="34" />
               <folding>
                 <element signature="e#273#274#0" expanded="true" />
                 <element signature="e#297#298#0" expanded="true" />
@@ -108,8 +106,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="653" />
-    <option name="y" value="-14" />
+    <option name="x" value="144" />
+    <option name="y" value="391" />
     <option name="width" value="1096" />
     <option name="height" value="1100" />
   </component>
@@ -121,8 +119,8 @@
     </navigator>
     <panes>
       <pane id="ProjectPane" />
-      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -414,6 +412,7 @@
       <workItem from="1556459449114" duration="1359000" />
       <workItem from="1556503085707" duration="185000" />
       <workItem from="1556503418222" duration="120000" />
+      <workItem from="1556503727205" duration="334000" />
     </task>
     <task id="LOCAL-00001" summary="Stack">
       <created>1555392287262</created>
@@ -433,12 +432,12 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="111797000" />
+    <option name="totallyTimeSpent" value="112131000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1065" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.12153518" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.12260128" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="UI Designer" order="3" />
@@ -853,7 +852,7 @@
     <entry file="file://$PROJECT_DIR$/src/array/Array.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="114">
-          <caret line="7" column="34" lean-forward="true" selection-start-line="7" selection-start-column="34" selection-end-line="7" selection-end-column="34" />
+          <caret line="7" column="34" selection-start-line="7" selection-start-column="34" selection-end-line="7" selection-end-column="34" />
           <folding>
             <element signature="e#273#274#0" expanded="true" />
             <element signature="e#297#298#0" expanded="true" />
