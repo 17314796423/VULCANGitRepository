@@ -2,7 +2,7 @@ package set;
 
 import java.util.ArrayList;
 
-public class Main {
+public class MainLLS {
 
     public static void main(String[] args) {
 
@@ -12,7 +12,7 @@ public class Main {
         if(FileOperation.readFile("pride-and-prejudice.txt", words1)) {
             System.out.println("Total words: " + words1.size());
 
-            BSTreeSet<String> set1 = new BSTreeSet<>();
+            Set<String> set1 = new LinkedListSet<>();
             for (String word : words1)
                 set1.add(word);
             System.out.println("Total different words: " + set1.getSize());
@@ -27,7 +27,7 @@ public class Main {
         if(FileOperation.readFile("a-tale-of-two-cities.txt", words2)){
             System.out.println("Total words: " + words2.size());
 
-            BSTreeSet<String> set2 = new BSTreeSet<>();
+            Set<String> set2 = new LinkedListSet<>();
             for(String word: words2)
                 set2.add(word);
             System.out.println("Total different words: " + set2.getSize());

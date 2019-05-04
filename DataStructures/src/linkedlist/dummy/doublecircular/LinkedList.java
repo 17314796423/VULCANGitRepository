@@ -117,6 +117,19 @@ public class LinkedList<E> {
         return remove(size - 1);
     }
 
+    public void removeElement(E e){
+        Node prev = dummyHead;
+        for(;prev.next !=  null;prev = prev.next){
+            if(prev.next.e.equals(e)){
+                Node ret = prev.next;
+                prev.next = ret.next;
+                ret.next = null;
+                size --;
+                return;
+            }
+        }
+    }
+
     public E get(int index) {
         if (index < 0 || index >= size)
             throw new IllegalArgumentException("Get failed. Illegal index.");
@@ -211,9 +224,14 @@ public class LinkedList<E> {
         linkedList.add(7, 777);
         System.out.println(linkedList.get(7));
         System.out.println(linkedList);
+
         linkedList.set(7, 888);
         System.out.println(linkedList.get(7));
         System.out.println(linkedList);
+
+        linkedList.removeElement(888);
+        System.out.println(linkedList);
+
     }
 
 }

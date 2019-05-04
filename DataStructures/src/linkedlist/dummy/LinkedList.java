@@ -79,6 +79,19 @@ public class LinkedList<E> {
         return ret.e;
     }
 
+    public void removeElement(E e){
+        Node prev = dummyHead;
+        for(;prev.next !=  null;prev = prev.next){
+            if(prev.next.e.equals(e)){
+                Node ret = prev.next;
+                prev.next = ret.next;
+                ret.next = null;
+                size --;
+                return;
+            }
+        }
+    }
+
     public E removeLast(){
         return remove(size - 1);
     }
@@ -152,6 +165,9 @@ public class LinkedList<E> {
         System.out.println(linkedList);
 
         linkedList.removeLast();
+        System.out.println(linkedList);
+
+        linkedList.removeElement(2);
         System.out.println(linkedList);
     }
 

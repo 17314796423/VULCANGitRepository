@@ -4,7 +4,11 @@ import tree.binarysearchtree.BST;
 
 public class BSTreeSet<E extends Comparable<E>> implements Set<E> {
 
-    private BST<E> bst = new BST<>();
+    private BST<E> bst;
+
+    public BSTreeSet(){
+        bst = new BST<>();
+    }
 
     @Override
     public void add(E e) {
