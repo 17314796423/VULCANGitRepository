@@ -16,6 +16,13 @@ public class Array<E> {
         this(10);
     }
 
+    public Array(E[] arr){
+        data = (E[])new Object[arr.length];
+        for (int i = 0; i < arr.length; i++)
+            data[i] = arr[i];
+        size = arr.length;
+    }
+
     // 获取数组的容量
     public int getCapacity(){
         return data.length;
@@ -29,6 +36,12 @@ public class Array<E> {
     // 返回数组是否为空
     public boolean isEmpty(){
         return size == 0;
+    }
+
+    public void swap(int sour, int dest){
+        E tmp = data[sour];
+        data[sour] = data[dest];
+        data[dest] = tmp;
     }
 
     // 在index索引的位置插入一个新元素e
