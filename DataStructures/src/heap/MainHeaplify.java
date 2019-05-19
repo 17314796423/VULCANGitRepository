@@ -8,21 +8,21 @@ public class MainHeaplify {
 
         long startTime = System.nanoTime();
 
-        BinaryMaxHeap<Integer> maxHeap;
+        BinaryMinHeap<Integer> minHeap;
         if(isHeapify)
-            maxHeap = new BinaryMaxHeap<>(testData);
+            minHeap = new BinaryMinHeap<>(testData);
         else{
-            maxHeap = new BinaryMaxHeap<>();
+            minHeap = new BinaryMinHeap<>();
             for(int num: testData)
-                maxHeap.add(num);
+                minHeap.add(num);
         }
 
         int[] arr = new int[testData.length];
         for(int i = 0 ; i < testData.length ; i ++)
-            arr[i] = maxHeap.extractMax();
+            arr[i] = minHeap.extractMin();
 
         for(int i = 1 ; i < testData.length ; i ++)
-            if(arr[i-1] < arr[i])
+            if(arr[i-1] > arr[i])
                 throw new IllegalArgumentException("Error");
         System.out.println("Test MaxHeap completed.");
 

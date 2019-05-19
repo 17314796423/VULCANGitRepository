@@ -2,14 +2,14 @@ package heap;
 
 import java.util.Random;
 
-public class Main {
+public class MainMin {
 
     public static void main(String[] args) {
 
         long start = System.currentTimeMillis();
 
-        int n = 100000000;
-        BinaryMaxHeap<Integer> heap = new BinaryMaxHeap<>();
+        int n = 1000000;
+        BinaryMinHeap<Integer> heap = new BinaryMinHeap<>();
         Random random = new Random();
         int[] arr = new int[n];
 
@@ -17,12 +17,12 @@ public class Main {
             heap.add(random.nextInt(Integer.MAX_VALUE));
 
         for (int i = 0; i < n; i++)
-            arr[i] = heap.extractMax();
+            arr[i] = heap.extractMin();
 
         System.out.println("length : " + arr.length);
 
         for (int i = 0; i < n - 1; i++) {
-            if(arr[i] < arr[i + 1])
+            if(arr[i] > arr[i + 1])
                 throw new RuntimeException(">>>>>>>>>>>>>>>>>>>>>>Error<<<<<<<<<<<<<<<<<<<<<<");
         }
 
