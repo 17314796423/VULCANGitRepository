@@ -80,6 +80,56 @@ public class SegmentTree<E> {
         );
     }
 
+    public void updateRange(int queryL, int queryR, E[] vals){
+        if(queryL < 0 || queryL >= data.length || queryR < 0 || queryR >= data.length || queryL > queryR || vals.length != queryR - queryL + 1)
+            throw new IllegalArgumentException("index is illegal.");
+        updateRange(0, 0, data.length - 1, queryL, queryR, vals);
+    }
+
+    private void updateRange(int treeIndex, int begin, int end, int queryL, int queryR, E[]vals){
+        if(begin == end){
+            for (int i = queryL, j = 0; i <= queryR; i++, j++)
+                if(i == begin) {
+                    segmentTree[treeIndex] = vals[j];
+                    return;
+                }
+        }
+        int leftChildTreeIndex = leftChild(treeIndex);
+        int rightChildTreeIndex = rightChild(treeIndex);
+        int mid = begin + (end - begin) / 2;
+        if(queryL > mid)
+            updateRange(rightChildTreeIndex, mid + 1, end, queryL, queryR, vals);
+        else if(queryR < mid + 1)
+            updateRange(leftChildTreeIndex, begin, mid, queryL, queryR, vals);
+        else{
+            updateRange(leftChildTreeIndex, begin, mid, queryL, queryR, vals);
+            updateRange(rightChildTreeIndex, mid + 1, end, queryL, queryR, vals);
+        }
+        segmentTree[treeIndex] = merger.merge(segmentTree[leftChildTreeIndex], segmentTree[rightChildTreeIndex]);
+    }
+
+    public void update(int index, E val){
+        if(index < 0 || index >= data.length)
+            throw new IllegalArgumentException("index is illegal.");
+        this.data[index] = val;
+        update(0, 0, data.length - 1, index, val);
+    }
+
+    private void update(int treeIndex, int begin, int end, int index, E val){
+        if(begin == end) {
+            segmentTree[treeIndex] = val;
+            return;
+        }
+        int leftChildTreeIndex = leftChild(treeIndex);
+        int rightChildTreeIndex = rightChild(treeIndex);
+        int mid = begin + (end - begin) / 2;
+        if(index <= mid)
+            update(leftChildTreeIndex, begin, mid, index, val);
+        else
+            update(rightChildTreeIndex, mid + 1, end, index, val);
+        segmentTree[treeIndex] = merger.merge(segmentTree[leftChildTreeIndex], segmentTree[rightChildTreeIndex]);
+    }
+
     @Override
     public String toString(){
         boolean flag = true;
