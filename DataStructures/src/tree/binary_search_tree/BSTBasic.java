@@ -1,4 +1,4 @@
-package tree.binarysearchtree;
+package tree.binary_search_tree;
 
 public class BSTBasic<E extends Comparable<E>> {
 

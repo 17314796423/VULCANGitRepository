@@ -1,4 +1,4 @@
-package tree.segmenttree;
+package tree.segment_tree;
 
 import queue.LoopQueue;
 import queue.Queue;

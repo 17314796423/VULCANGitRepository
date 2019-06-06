@@ -1,6 +1,6 @@
 package set;
 
-import tree.binarysearchtree.BST;
+import tree.binary_search_tree.BST;
 
 public class BSTreeSet<E extends Comparable<E>> implements Set<E> {
 

@@ -2,7 +2,7 @@ package map;
 
 public interface Map<K, V> {
 
-    void add(K key, V value);
+    void put(K key, V value);
     V remove(K key);
     boolean contains(K key);
     V get(K key);

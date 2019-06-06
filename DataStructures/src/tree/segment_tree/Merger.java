@@ -1,4 +1,4 @@
-package tree.segmenttree;
+package tree.segment_tree;
 
 public interface Merger<E> {
 

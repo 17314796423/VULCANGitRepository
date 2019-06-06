@@ -19,7 +19,7 @@ public class Main {
                 if(map.contains(word))
                     map.set(word, map.get(word) + 1);
                 else
-                    map.add(word, 1);
+                    map.put(word, 1);
             }
 
             System.out.println("Total different words: " + map.getSize());
@@ -34,7 +34,7 @@ public class Main {
 
     public static void main(String[] args) {
 
-        String filename = "pride-and-prejudice.txt";
+        String filename = "The-Decameron-Giovanni-Boccaccio.txt";
 
         BSTreeMap<String, Integer> bstMap = new BSTreeMap<>();
         double time1 = testMap(bstMap, filename);
@@ -42,9 +42,15 @@ public class Main {
 
         System.out.println();
 
+        TrieMap<Integer> trieMap = new TrieMap<>();
+        double time2 = testMap(trieMap, filename);
+        System.out.println("Trie Map: " + time2 + " s");
+
+        System.out.println();
+
         LinkedListMap<String, Integer> linkedListMap = new LinkedListMap<>();
-        double time2 = testMap(linkedListMap, filename);
-        System.out.println("Linked List Map: " + time2 + " s");
+        double time3 = testMap(linkedListMap, filename);
+        System.out.println("Linked List Map: " + time3 + " s");
 
     }
 }

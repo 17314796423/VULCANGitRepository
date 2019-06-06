@@ -1,4 +1,4 @@
-package tree.binarysearchtree;
+package tree.binary_search_tree;
 
 import array.Array;
 import queue.LoopQueue;
@@ -113,12 +113,10 @@ public class BST<E extends Comparable<E>> {
             for (; !queue.isEmpty(); ) {
                 Node cur = queue.dequeue();
                 System.out.println(cur.e);
-                if (cur.left != null) {
+                if (cur.left != null)
                     queue.enqueue(cur.left);
-                }
-                if (cur.right != null) {
+                if (cur.right != null)
                     queue.enqueue(cur.right);
-                }
             }
         }
     }

@@ -33,7 +33,7 @@ public class BSTreeMap<K extends Comparable<K>, V> implements Map<K, V> {
     }
 
     @Override
-    public void add(K key, V value) {
+    public void put(K key, V value) {
         root = add(root, key, value);
     }
 
@@ -166,7 +166,7 @@ public class BSTreeMap<K extends Comparable<K>, V> implements Map<K, V> {
                 if (map.contains(word))
                     map.set(word, map.get(word) + 1);
                 else
-                    map.add(word, 1);
+                    map.put(word, 1);
             }
 
             System.out.println("Total different words: " + map.getSize());

@@ -1,4 +1,4 @@
-package tree.binarysearchtree;
+package tree.binary_search_tree;
 
 import java.util.ArrayList;
 import java.util.Random;
