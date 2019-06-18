@@ -408,8 +408,8 @@ public class WordDictionary211 {
         }
         System.out.println(wordDictionary.search("a..ument"));
         /*Trie trieRec = new Trie();//remove测试用力
-        trieRec.add("goooooood");
-        trieRec.add("go");
+        trieRec.put("goooooood");
+        trieRec.put("go");
         System.out.println(trieRec.size());
         System.out.println(trieRec.remove("goooooood"));
         System.out.println(trieRec.size());

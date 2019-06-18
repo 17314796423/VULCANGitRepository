@@ -34,7 +34,7 @@ public class Main {
 
     public static void main(String[] args) {
 
-        String filename = "The-Decameron-Giovanni-Boccaccio.txt";
+        String filename = "pride-and-prejudice.txt";
 
         BSTreeMap<String, Integer> bstMap = new BSTreeMap<>();
         double time1 = testMap(bstMap, filename);
@@ -51,6 +51,12 @@ public class Main {
         LinkedListMap<String, Integer> linkedListMap = new LinkedListMap<>();
         double time3 = testMap(linkedListMap, filename);
         System.out.println("Linked List Map: " + time3 + " s");
+
+        System.out.println();
+
+        AVLMap<String, Integer> avlMap = new AVLMap<>();
+        double time4 = testMap(avlMap, filename);
+        System.out.println("AVL Map: " + time4 + " s");
 
     }
 }
