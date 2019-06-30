@@ -1,5 +1,6 @@
 package map;
 
+import hashtable.HashTable;
 import set.FileOperation;
 
 import java.util.ArrayList;
@@ -57,6 +58,12 @@ public class Main {
         AVLMap<String, Integer> avlMap = new AVLMap<>();
         double time4 = testMap(avlMap, filename);
         System.out.println("AVL Map: " + time4 + " s");
+
+        System.out.println();
+        //131071
+        HashTable<String, Integer> ht = new HashTable<>();
+        double time5 = testMap(ht, filename);
+        System.out.println("HashTable Map: " + time5 + " s");
 
     }
 }
