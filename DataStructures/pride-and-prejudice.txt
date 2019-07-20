@@ -16,7 +16,7 @@ Last Updated: March 10, 2018
 
 Language: English
 
-Character set encoding: UTF-8
+Character data.structures.set encoding: UTF-8
 
 *** START OF THIS PROJECT GUTENBERG EBOOK PRIDE AND PREJUDICE ***
 
@@ -426,7 +426,7 @@ suiting _his_ fancy; for he is a most disagreeable, horrid man, not at
 all worth pleasing. So high and so conceited that there was no enduring
 him! He walked here, and he walked there, fancying himself so very
 great! Not handsome enough to dance with! I wish you had been there, my
-dear, to have given him one of your set-downs. I quite detest the man.”
+dear, to have given him one of your data.structures.set-downs. I quite detest the man.”
 
 
 
@@ -1101,7 +1101,7 @@ impulse of feeling should be guided by reason; and, in my opinion,
 exertion should always be in proportion to what is required.”
 
 “We will go as far as Meryton with you,” said Catherine and Lydia.
-Elizabeth accepted their company, and the three young ladies set off
+Elizabeth accepted their company, and the three young ladies data.structures.set off
 together.
 
 “If we make haste,” said Lydia, as they walked along, “perhaps we may
@@ -2307,7 +2307,7 @@ and his commendation of everything would have touched Mrs. Bennet's
 heart, but for the mortifying supposition of his viewing it all as his
 own future property. The dinner too in its turn was highly admired; and
 he begged to know to which of his fair cousins the excellency of its
-cooking was owing. But he was set right there by Mrs. Bennet, who
+cooking was owing. But he was data.structures.set right there by Mrs. Bennet, who
 assured him with some asperity that they were very well able to keep a
 good cook, and that her daughters had nothing to do in the kitchen. He
 begged pardon for having displeased her. In a softened tone she declared
@@ -2636,7 +2636,7 @@ The gentlemen did approach, and when Mr. Wickham walked into the room,
 Elizabeth felt that she had neither been seeing him before, nor thinking
 of him since, with the smallest degree of unreasonable admiration.
 The officers of the ----shire were in general a very creditable,
-gentlemanlike set, and the best of them were of the present party; but
+gentlemanlike data.structures.set, and the best of them were of the present party; but
 Mr. Wickham was as far beyond them all in person, countenance, air, and
 walk, as _they_ were superior to the broad-faced, stuffy uncle Phillips,
 breathing port wine, who followed them into the room.
@@ -3154,7 +3154,7 @@ When the dancing recommenced, however, and Darcy approached to claim her
 hand, Charlotte could not help cautioning her in a whisper, not to be a
 simpleton, and allow her fancy for Wickham to make her appear unpleasant
 in the eyes of a man ten times his consequence. Elizabeth made no
-answer, and took her place in the set, amazed at the dignity to which
+answer, and took her place in the data.structures.set, amazed at the dignity to which
 she was arrived in being allowed to stand opposite to Mr. Darcy, and
 reading in her neighbours' looks, their equal amazement in beholding
 it. They stood for some time without speaking a word; and she began to
@@ -3215,7 +3215,7 @@ his life.”
 
 Darcy made no answer, and seemed desirous of changing the subject. At
 that moment, Sir William Lucas appeared close to them, meaning to pass
-through the set to the other side of the room; but on perceiving Mr.
+through the data.structures.set to the other side of the room; but on perceiving Mr.
 Darcy, he stopped with a bow of superior courtesy to compliment him on
 his dancing and his partner.
 
@@ -3621,7 +3621,7 @@ The next day opened a new scene at Longbourn. Mr. Collins made his
 declaration in form. Having resolved to do it without loss of time, as
 his leave of absence extended only to the following Saturday, and having
 no feelings of diffidence to make it distressing to himself even at
-the moment, he set about it in a very orderly manner, with all the
+the moment, he data.structures.set about it in a very orderly manner, with all the
 observances, which he supposed a regular part of the business. On
 finding Mrs. Bennet, Elizabeth, and one of the younger girls together,
 soon after breakfast, he addressed the mother in these words:
@@ -3671,7 +3671,7 @@ not use the short pause he allowed in any attempt to stop him further,
 and he continued:
 
 “My reasons for marrying are, first, that I think it a right thing for
-every clergyman in easy circumstances (like myself) to set the example
+every clergyman in easy circumstances (like myself) to data.structures.set the example
 of matrimony in his parish; secondly, that I am convinced that it will
 add very greatly to my happiness; and thirdly--which perhaps I ought
 to have mentioned earlier, that it is the particular advice and
@@ -4216,7 +4216,7 @@ secure, and with reason, for Charlotte had been tolerably encouraging,
 he was comparatively diffident since the adventure of Wednesday.
 His reception, however, was of the most flattering kind. Miss Lucas
 perceived him from an upper window as he walked towards the house, and
-instantly set out to meet him accidentally in the lane. But little had
+instantly data.structures.set out to meet him accidentally in the lane. But little had
 she dared to hope that so much love and eloquence awaited her there.
 
 In as short a time as Mr. Collins's long speeches would allow,
@@ -4611,7 +4611,7 @@ the praise on her sister's warm affection.
 
 “Nay,” said Elizabeth, “this is not fair. _You_ wish to think all the
 world respectable, and are hurt if I speak ill of anybody. I only want
-to think _you_ perfect, and you set yourself against it. Do not
+to think _you_ perfect, and you data.structures.set yourself against it. Do not
 be afraid of my running into any excess, of my encroaching on your
 privilege of universal good-will. You need not. There are few people
 whom I really love, and still fewer of whom I think well. The more I see
@@ -4990,7 +4990,7 @@ visit.
 hope you will consent to be of the party. Indeed, Eliza, you will be as
 welcome as either of them.”
 
-The wedding took place; the bride and bridegroom set off for Kent from
+The wedding took place; the bride and bridegroom data.structures.set off for Kent from
 the church door, and everybody had as much to say, or to hear, on
 the subject as usual. Elizabeth soon heard from her friend; and their
 correspondence was as regular and frequent as it had ever been; that
@@ -6125,7 +6125,7 @@ animated. Mrs. Collins knew not what to make of him. Colonel
 Fitzwilliam's occasionally laughing at his stupidity, proved that he was
 generally different, which her own knowledge of him could not have told
 her; and as she would liked to have believed this change the effect
-of love, and the object of that love her friend Eliza, she set herself
+of love, and the object of that love her friend Eliza, she data.structures.set herself
 seriously to work to find it out. She watched him whenever they were at
 Rosings, and whenever he came to Hunsford; but without much success. He
 certainly looked at her friend a great deal, but the expression of that
@@ -7302,7 +7302,7 @@ further.
 Chapter 39
 
 
-It was the second week in May, in which the three young ladies set out
+It was the second week in May, in which the three young ladies data.structures.set out
 together from Gracechurch Street for the town of ----, in Hertfordshire;
 and, as they drew near the appointed inn where Mr. Bennet's carriage
 was to meet them, they quickly perceived, in token of the coachman's
@@ -7311,7 +7311,7 @@ These two girls had been above an hour in the place, happily employed
 in visiting an opposite milliner, watching the sentinel on guard, and
 dressing a salad and cucumber.
 
-After welcoming their sisters, they triumphantly displayed a table set
+After welcoming their sisters, they triumphantly displayed a table data.structures.set
 out with such cold meat as an inn larder usually affords, exclaiming,
 “Is not this nice? Is not this an agreeable surprise?”
 
@@ -7678,7 +7678,7 @@ Miller's regiment went away. I thought I should have broken my heart.”
 “Oh, yes!--if one could but go to Brighton! But papa is so
 disagreeable.”
 
-“A little sea-bathing would set me up forever.”
+“A little sea-bathing would data.structures.set me up forever.”
 
 “And my aunt Phillips is sure it would do _me_ a great deal of good,”
  added Kitty.
@@ -7885,7 +7885,7 @@ Elizabeth; and they parted at last with mutual civility, and possibly a
 mutual desire of never meeting again.
 
 When the party broke up, Lydia returned with Mrs. Forster to Meryton,
-from whence they were to set out early the next morning. The separation
+from whence they were to data.structures.set out early the next morning. The separation
 between her and her family was rather noisy than pathetic. Kitty was the
 only one who shed tears; but she did weep from vexation and envy. Mrs.
 Bennet was diffuse in her good wishes for the felicity of her daughter,
@@ -8002,7 +8002,7 @@ they were now to spend a few days, was probably as great an object of
 her curiosity as all the celebrated beauties of Matlock, Chatsworth,
 Dovedale, or the Peak.
 
-Elizabeth was excessively disappointed; she had set her heart on seeing
+Elizabeth was excessively disappointed; she had data.structures.set her heart on seeing
 the Lakes, and still thought there might have been time enough. But it
 was her business to be satisfied--and certainly her temper to be happy;
 and all was soon right again.
@@ -8021,7 +8021,7 @@ cousin Jane, who was the general favourite, and whose steady sense and
 sweetness of temper exactly adapted her for attending to them in every
 way--teaching them, playing with them, and loving them.
 
-The Gardiners stayed only one night at Longbourn, and set off the
+The Gardiners stayed only one night at Longbourn, and data.structures.set off the
 next morning with Elizabeth in pursuit of novelty and amusement.
 One enjoyment was certain--that of suitableness of companions;
 a suitableness which comprehended health and temper to bear
@@ -8574,7 +8574,7 @@ approaching the scene of her former pleasures, every idea gave way to
 the charm of recollection; and she was too much engaged in pointing out
 to her husband all the interesting spots in its environs to think of
 anything else. Fatigued as she had been by the morning's walk they
-had no sooner dined than she set off again in quest of her former
+had no sooner dined than she data.structures.set off again in quest of her former
 acquaintance, and the evening was spent in the satisfactions of a
 intercourse renewed after many years' discontinuance.
 
@@ -8665,7 +8665,7 @@ a like manner. Sometimes she could fancy that he talked less than on
 former occasions, and once or twice pleased herself with the notion
 that, as he looked at her, he was trying to trace a resemblance. But,
 though this might be imaginary, she could not be deceived as to his
-behaviour to Miss Darcy, who had been set up as a rival to Jane. No look
+behaviour to Miss Darcy, who had been data.structures.set up as a rival to Jane. No look
 appeared on either side that spoke particular regard. Nothing occurred
 between them that could justify the hopes of his sister. On this point
 she was soon satisfied; and two or three little circumstances occurred
@@ -8992,7 +8992,7 @@ it had been missent elsewhere. Elizabeth was not surprised at it, as
 Jane had written the direction remarkably ill.
 
 They had just been preparing to walk as the letters came in; and
-her uncle and aunt, leaving her to enjoy them in quiet, set off by
+her uncle and aunt, leaving her to enjoy them in quiet, data.structures.set off by
 themselves. The one missent must first be attended to; it had been
 written five days ago. The beginning contained an account of all their
 little parties and engagements, with such news as the country afforded;
@@ -9039,7 +9039,7 @@ day before, not many hours after the express. Though Lydia's short
 letter to Mrs. F. gave them to understand that they were going to Gretna
 Green, something was dropped by Denny expressing his belief that W.
 never intended to go there, or to marry Lydia at all, which was
-repeated to Colonel F., who, instantly taking the alarm, set off from B.
+repeated to Colonel F., who, instantly taking the alarm, data.structures.set off from B.
 intending to trace their route. He did trace them easily to Clapham,
 but no further; for on entering that place, they removed into a hackney
 coach, and dismissed the chaise that brought them from Epsom. All that
@@ -9683,7 +9683,7 @@ number of the hackney coach which took them from Clapham. It had come
 with a fare from London; and as he thought that the circumstance of a
 gentleman and lady's removing from one carriage into another might
 be remarked he meant to make inquiries at Clapham. If he could anyhow
-discover at what house the coachman had before set down his fare, he
+discover at what house the coachman had before data.structures.set down his fare, he
 determined to make inquiries there, and hoped it might not be impossible
 to find out the stand and number of the coach. I do not know of any
 other designs that he had formed; but he was in such a hurry to be gone,
@@ -9701,7 +9701,7 @@ His family knew him to be, on all common occasions, a most negligent and
 dilatory correspondent; but at such a time they had hoped for exertion.
 They were forced to conclude that he had no pleasing intelligence to
 send; but even of _that_ they would have been glad to be certain. Mr.
-Gardiner had waited only for the letters before he set off.
+Gardiner had waited only for the letters before he data.structures.set off.
 
 When he was gone, they were certain at least of receiving constant
 information of what was going on, and their uncle promised, at parting,
@@ -10387,7 +10387,7 @@ likes very much. The officers may not be so pleasant in General ----'s
 regiment.”
 
 His daughter's request, for such it might be considered, of being
-admitted into her family again before she set off for the North,
+admitted into her family again before she data.structures.set off for the North,
 received at first an absolute negative. But Jane and Elizabeth,
 who agreed in wishing, for the sake of their sister's feelings and
 consequence, that she should be noticed on her marriage by her parents,
@@ -10566,7 +10566,7 @@ business to that horrid man Mr. Stone. And then, you know, when once
 they get together, there is no end of it. Well, I was so frightened I
 did not know what to do, for my uncle was to give me away; and if we
 were beyond the hour, we could not be married all day. But, luckily, he
-came back again in ten minutes' time, and then we all set out. However,
+came back again in ten minutes' time, and then we all data.structures.set out. However,
 I recollected afterwards that if he had been prevented going, the
 wedding need not be put off, for Mr. Darcy might have done as well.”
 
@@ -11728,7 +11728,7 @@ were post; and neither the carriage, nor the livery of the servant who
 preceded it, were familiar to them. As it was certain, however, that
 somebody was coming, Bingley instantly prevailed on Miss Bennet to avoid
 the confinement of such an intrusion, and walk away with him into the
-shrubbery. They both set off, and the conjectures of the remaining three
+shrubbery. They both data.structures.set off, and the conjectures of the remaining three
 continued, though with little satisfaction, till the door was thrown
 open and their visitor entered. It was Lady Catherine de Bourgh.
 
@@ -12062,7 +12062,7 @@ the idea. She had not herself forgotten to feel that the marriage of her
 sister must bring them more frequently together. And her neighbours
 at Lucas Lodge, therefore (for through their communication with the
 Collinses, the report, she concluded, had reached Lady Catherine), had
-only set that down as almost certain and immediate, which she had looked
+only data.structures.set that down as almost certain and immediate, which she had looked
 forward to as possible at some future time.
 
 In revolving Lady Catherine's expressions, however, she could not help
@@ -12233,7 +12233,7 @@ to tell him of their having seen his aunt, of which her daughter sat
 in momentary dread, Bingley, who wanted to be alone with Jane, proposed
 their all walking out. It was agreed to. Mrs. Bennet was not in the
 habit of walking; Mary could never spare time; but the remaining five
-set off together. Bingley and Jane, however, soon allowed the others
+data.structures.set off together. Bingley and Jane, however, soon allowed the others
 to outstrip them. They lagged behind, while Elizabeth, Kitty, and Darcy
 were to entertain each other. Very little was said by either; Kitty
 was too much afraid of him to talk; Elizabeth was secretly forming a
@@ -12622,7 +12622,7 @@ asked in the course of the evening. Elizabeth reserved to herself the
 application for her mother's. She could not determine how her mother
 would take it; sometimes doubting whether all his wealth and grandeur
 would be enough to overcome her abhorrence of the man. But whether she
-were violently set against the match, or violently delighted with it, it
+were violently data.structures.set against the match, or violently delighted with it, it
 was certain that her manner would be equally ill adapted to do credit
 to her sense; and she could no more bear that Mr. Darcy should hear
 the first raptures of her joy, than the first vehemence of her
@@ -12769,7 +12769,7 @@ Chapter 60
 Elizabeth's spirits soon rising to playfulness again, she wanted Mr.
 Darcy to account for his having ever fallen in love with her. “How could
 you begin?” said she. “I can comprehend your going on charmingly, when
-you had once made a beginning; but what could set you off in the first
+you had once made a beginning; but what could data.structures.set you off in the first
 place?”
 
 “I cannot fix on the hour, or the spot, or the look, or the words, which
@@ -13081,7 +13081,7 @@ Creating the works from public domain print editions means that no
 one owns a United States copyright in these works, so the Foundation
 (and you!) can copy and distribute it in the United States without
 permission and without paying copyright royalties.  Special rules,
-set forth in the General Terms of Use part of this license, apply to
+data.structures.set forth in the General Terms of Use part of this license, apply to
 copying and distributing Project Gutenberg-tm electronic works to
 protect the PROJECT GUTENBERG-tm concept and trademark.  Project
 Gutenberg is a registered trademark, and may not be used if you
@@ -13121,7 +13121,7 @@ all copies of Project Gutenberg-tm electronic works in your possession.
 If you paid a fee for obtaining a copy of or access to a Project
 Gutenberg-tm electronic work and you do not agree to be bound by the
 terms of this agreement, you may obtain a refund from the person or
-entity to whom you paid the fee as set forth in paragraph 1.E.8.
+entity to whom you paid the fee as data.structures.set forth in paragraph 1.E.8.
 
 1.B.  “Project Gutenberg” is a registered trademark.  It may only be
 used on or associated in any way with an electronic work by people who
@@ -13181,7 +13181,7 @@ or charges.  If you are redistributing or providing access to a work
 with the phrase “Project Gutenberg” associated with or appearing on the
 work, you must comply either with the requirements of paragraphs 1.E.1
 through 1.E.7 or obtain permission for the use of the work and the
-Project Gutenberg-tm trademark as set forth in paragraphs 1.E.8 or
+Project Gutenberg-tm trademark as data.structures.set forth in paragraphs 1.E.8 or
 1.E.9.
 
 1.E.3.  If an individual Project Gutenberg-tm electronic work is posted
@@ -13197,7 +13197,7 @@ work or any other work associated with Project Gutenberg-tm.
 
 1.E.5.  Do not copy, display, perform, distribute or redistribute this
 electronic work, or any part of this electronic work, without
-prominently displaying the sentence set forth in paragraph 1.E.1 with
+prominently displaying the sentence data.structures.set forth in paragraph 1.E.1 with
 active links or immediate access to the full terms of the Project
 Gutenberg-tm License.
 
@@ -13251,11 +13251,11 @@ that
      distribution of Project Gutenberg-tm works.
 
 1.E.9.  If you wish to charge a fee or distribute a Project Gutenberg-tm
-electronic work or group of works on different terms than are set
+electronic work or group of works on different terms than are data.structures.set
 forth in this agreement, you must obtain permission in writing from
 both the Project Gutenberg Literary Archive Foundation and Michael
 Hart, the owner of the Project Gutenberg-tm trademark.  Contact the
-Foundation as set forth in Section 3 below.
+Foundation as data.structures.set forth in Section 3 below.
 
 1.F.
 
@@ -13297,14 +13297,14 @@ receive the work electronically in lieu of a refund.  If the second copy
 is also defective, you may demand a refund in writing without further
 opportunities to fix the problem.
 
-1.F.4.  Except for the limited right of replacement or refund set forth
+1.F.4.  Except for the limited right of replacement or refund data.structures.set forth
 in paragraph 1.F.3, this work is provided to you 'AS-IS' WITH NO OTHER
 WARRANTIES OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO
 WARRANTIES OF MERCHANTIBILITY OR FITNESS FOR ANY PURPOSE.
 
 1.F.5.  Some states do not allow disclaimers of certain implied
 warranties or the exclusion or limitation of certain types of damages.
-If any disclaimer or limitation set forth in this agreement violates the
+If any disclaimer or limitation data.structures.set forth in this agreement violates the
 law of the state applicable to this agreement, the agreement shall be
 interpreted to make the maximum disclaimer or limitation permitted by
 the applicable state law.  The invalidity or unenforceability of any
@@ -13374,7 +13374,7 @@ Project Gutenberg-tm depends upon and cannot survive without wide
 spread public support and donations to carry out its mission of
 increasing the number of public domain and licensed works that can be
 freely distributed in machine readable form accessible by the widest
-array of equipment including outdated equipment.  Many small donations
+data.structures.array of equipment including outdated equipment.  Many small donations
 ($1 to $5,000) are particularly important to maintaining tax exempt
 status with the IRS.
 
