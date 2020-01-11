@@ -23,6 +23,17 @@ public class Array<E> {
         size = arr.length;
     }
 
+    public Array(E[] arr, boolean isCopy){
+        if (isCopy) {
+            data = (E[])new Object[arr.length];
+            for (int i = 0; i < arr.length; i++)
+                data[i] = arr[i];
+        } else {
+            data = arr;
+        }
+        size = arr.length;
+    }
+
     // 获取数组的容量
     public int getCapacity(){
         return data.length;
@@ -73,7 +84,7 @@ public class Array<E> {
 
     // 获取index索引位置的元素
     public E get(int index){
-        if(index < 0 || index >= size)
+        if(index < 0 || index >= data.length)
             throw new IllegalArgumentException("Get failed. Index is illegal.");
         return data[index];
     }

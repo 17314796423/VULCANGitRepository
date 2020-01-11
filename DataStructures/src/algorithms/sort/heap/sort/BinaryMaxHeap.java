@@ -1,4 +1,4 @@
-package data.structures.heap;
+package algorithms.sort.heap.sort;
 
 import data.structures.array.Array;
 
@@ -18,6 +18,16 @@ public class BinaryMaxHeap<E extends Comparable<E>> {
         data = new Array<>(arr);
         for(int i = parent(arr.length - 1); i >= 0; i --)
             siftDown(i);
+    }
+
+    private void _sort(E[] arr){
+        data = new Array<E>(arr, false);
+        for(int i = parent(arr.length - 1); i >= 0; i --)
+            siftDown(i);
+        for (int i = data.getSize() - 1; i > 0; i--) {
+            data.swap(0, i);
+            _siftDown(0, i);
+        }
     }
 
     public int size(){
@@ -84,7 +94,7 @@ public class BinaryMaxHeap<E extends Comparable<E>> {
     private void _siftDown(int index, int n) {
         for(;leftChild(index) < n;){
             int dest = leftChild(index);
-            if(dest + 1 < data.getSize()
+            if(dest + 1 < n
                     && data.get(dest + 1).compareTo(data.get(dest)) > 0)
                 dest ++;
             if(data.get(index).compareTo(data.get(dest)) >= 0)
@@ -101,11 +111,9 @@ public class BinaryMaxHeap<E extends Comparable<E>> {
         return ret;
     }
 
+
     public static void sort(Comparable[] arr) {
-        BinaryMaxHeap<? extends Comparable> heap = new BinaryMaxHeap<>(arr);
-        for (int i = arr.length - 1; i >= 0; i--) {
-            arr[i] = heap.extractMax();
-        }
+        new BinaryMaxHeap()._sort(arr);
     }
 
 }

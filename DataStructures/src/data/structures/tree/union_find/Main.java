@@ -52,11 +52,11 @@ public class Main {
         int size = 10000000;
         int m = 10000000;
 
-        /*UnionFindQuickFind uf1 = new UnionFindQuickFind(size);
-        System.out.println("UnionFind1 : " + testUF(uf1, m) + " s");
+//        UnionFindQuickFind uf1 = new UnionFindQuickFind(size);
+//        System.out.println("UnionFind1 : " + testUF(uf1, m) + " s");
 
-        UnionFindQuickUnion uf2 = new UnionFindQuickUnion(size);
-        System.out.println("UnionFind2 : " + testUF(uf2, m) + " s");*/
+//        UnionFindQuickUnion uf2 = new UnionFindQuickUnion(size);
+//        System.out.println("UnionFind2 : " + testUF(uf2, m) + " s");
 
         UnionFindSizeOptimized uf3 = new UnionFindSizeOptimized(size);
         System.out.println("UnionFind3 : " + testUF(uf3, m) + " s");

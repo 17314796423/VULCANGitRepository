@@ -29,7 +29,7 @@ public class UnionFindPathCompressed2 implements UF {
         if(p != parent[p]){
             parent[p] = find(parent[p]);
         }
-        return p;
+        return parent[p];
     }
 
     @Override
